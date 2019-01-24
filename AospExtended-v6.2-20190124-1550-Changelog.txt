@@ -1,0 +1,376 @@
+====================
+     01-24-2019
+====================
+
+   * device/xiaomi/jasmine/
+214caa5  add support for SmartPixels, delete unnecessary lineage overlay  [Fullbustah]
+17c258e  Jasmine: aex bringup  [Fullbustah]
+641370d  jasmine : fix derp in manifest  [coderzstas]
+8e2eeb2  increase incall volume lilbit  [coderzstas]
+   * device/xiaomi/sdm660-common/
+fd8d484  rootdir update from jasmine  [coderzstas]
+614207b  upd  [coderzstas]
+39b6315  upd  [coderzstas]
+   * vendor/xiaomi/jasmine/
+d975780  update qti_libpermissions  [coderzstas]
+37057e9  jasmine : update listen blobs  [coderzstas]
+74aa040  jasmine : update gps blobs  [coderzstas]
+90ba18a  update cne blobs  [coderzstas]
+21ad2f6  Revert "remove unused ant+ blobs"  [coderzstas]
+
+====================
+     01-23-2019
+====================
+
+   * device/xiaomi/jasmine/
+3232fbe  jasmine : update sensors file to jasmine 10.0.3.0.PDIMIXM  [coderzstas]
+3d5ee96  jasmine : update fingerprint  [coderzstas]
+3b7310d  jasmine : bump vendor security patch to 2019-01-01  [coderzstas]
+   * device/xiaomi/sdm660-common/
+beefa60  remove unused sensors service  [coderzstas]
+4432403  fix my derp  [coderzstas]
+14e5e0a  sdm660: spectrum: Improve CPU settings based on jason values  [coderzstas]
+a8bf20d  cleanup init target  [coderzstas]
+3e11733  update rootdir from jasmine  [coderzstas]
+   * manifest/
+360864c  Update Readme [1/4]  [allstargaurav]
+   * vendor/xiaomi/jasmine/
+d71aacb  add more camera firmwares  [coderzstas]
+062e033  remove unused ant+ blobs  [coderzstas]
+054e773  update sdm blobs  [coderzstas]
+0ecc5e6  update firmware  [coderzstas]
+9199a07  update drm blobs  [coderzstas]
+ffe0e71  update Bluetooth blobs  [coderzstas]
+a88364f  update Audio ACDB blobs  [coderzstas]
+8eebcaf  update ADSP and ADSP modules from jasmine  [coderzstas]
+47ae947  update perf blobs  [coderzstas]
+6f4c49d  update Postprocessing blobs  [coderzstas]
+0079208  update Peripheral manager blobs  [coderzstas]
+9b74608  jasmine : update thermal blobs  [coderzstas]
+484afe2  jasmine : update graphics blobs  [coderzstas]
+dfb3cd3  update time service blobs  [coderzstas]
+c706f83  update wifi blobs  [coderzstas]
+9bec757  jasmine update drm widevine libs  [coderzstas]
+d3affc4  jasmine : update sensors lib to jasmine 10.0.3.0.PDIMIXM  [coderzstas]
+c2d18c9  jasmine : update drm , drm widevine , gatekeeper , keystore libs from xiaomi/jasmine/jasmine_sprout:9/PKQ1.180904.001/V10.0.3.0.PDIMIXM:user/release-keys  [coderzstas]
+45f9eff  jasmine : update camera libs from xiaomi/jasmine/jasmine_sprout:9/PKQ1.180904.001/V10.0.3.0.PDIMIXM:user/release-keys  [coderzstas]
+
+====================
+     01-22-2019
+====================
+
+   * device/xiaomi/sdm660-common/
+9a40939  sdm660 : add more camera impl  [coderzstas]
+44dc281  sdm660 : build libvulkan , camera.device@1.0-impl  [coderzstas]
+186fd70  sdm660 : enable TARGET_USES_QTI_CAMERA_DEVICE  [coderzstas]
+   * kernel/xiaomi/sdm660/
+2bbfbf94cce1  sdm660: haptic: revert back to old qpnp haptic driver  [Max Weffers]
+91ecfcff9823  Merge branch 'android-4.4' of https://github.com/aosp-mirror/kernel_common into test  [Max Weffers]
+757647ffc949  Revert "serial: msm_serial_hs: Protect spurious irqs after wakeup irq enablement"  [Max Weffers]
+b7699d9bd8a2  Merge branch 'mkp' of https://github.com/GuaiYiHu/android_kernel_xiaomi_whyred into test  [Max Weffers]
+c218b1554958  Revert "msm: camera: isp: Handle frame drop due to delay   "  [Max Weffers]
+62c3b250f558  msm: kgsl: Report correct GPU frequency in sysfs  [Max Weffers]
+   * vendor/xiaomi/jasmine/
+6eb3412  Merge branch 'los-16.0-new' of https://github.com/xiaomi-sdm660/android_vendor_xiaomi_jasmine into los-16.0-new  [coderzstas]
+2533db5  jasmine : update miuicamera device_features from stock camera  [coderzstas]
+90220a1  fixup writespaces  [GitHub]
+a511bdb  jasmine : add some missing camera libs  [coderzstas]
+
+====================
+     01-21-2019
+====================
+
+   * device/xiaomi/sdm660-common/
+bf40f5b  sdm660 : remove duplicate in init.target  [coderzstas]
+ef2e7c9  sdm660: Remove implicitly built QTI camera shared libraries  [coderzstas]
+e95339d  sdm660 : remove duplicate prop  [coderzstas]
+fe361f3  sdm660 : update fstab from stock p  [coderzstas]
+   * vendor/xiaomi/jasmine/
+d9ce295  jasmine : remove unused camera blobs  [coderzstas]
+
+====================
+     01-20-2019
+====================
+
+   * device/xiaomi/jasmine/
+9c54d6d  jasmine : more ovelay updates from stock  [coderzstas]
+2ad949d  jasmine : update brightness overlay from stock  [coderzstas]
+   * device/xiaomi/sdm660-common/
+0e408f4  sdm660 : cleanup and update overlay from jasmine pie  [coderzstas]
+   * kernel/xiaomi/sdm660/
+c6976b847a7f  Merge commit 'd5b96952149c4e021e9fa18a82a817c5067dda97' into mkp  [GuaiYiHu]
+   * vendor/xiaomi/jasmine/
+c68b773  xiaomimeme blame part 2  [coderzstas]
+4a0e94b  jasminememe : blame xiaomi .  [coderzstas]
+
+====================
+     01-19-2019
+====================
+
+   * device/xiaomi/jasmine/
+8ddfc89  jasmine: audio: Remove support for MMAP IRQ mode streams  [coderzstas]
+   * device/xiaomi/sdm660-common/
+2562737  i hate writespaces  [coderzstas]
+f3d8dc1  sdm660 : update light service  [coderzstas]
+ffdf106  sdm660 : cleanup light hal service  [coderzstas]
+4718c7f  sdm660: fstab : drop resize flag and add reservedsize  [coderzstas]
+ad9dae7  sdm660: drop legacy prop  [coderzstas]
+314b152  sdm660 : cleanup biometrics service  [coderzstas]
+0b528e6  sdm660 : init : cleanup  [coderzstas]
+c47dc7a  sdm660: gps: correct gps rc file name  [coderzstas]
+   * hardware/qcom/display/
+329d459ba  Make memtrack build with the VNDK.  [Elektroschmock]
+08b187682  Add missing includes.  [Elektroschmock]
+a2eefae27  libmemtrack: Add open method for msm8974.memtrack  [Elektroschmock]
+   * hardware/qcom/fm/
+af17486  libfm_jni: Fix typo in ctl.stop  [Michael Bestas]
+131be18  libfm_jni: Rename the QC introduced props to have vendor tag added  [Michael Bestas]
+   * kernel/xiaomi/sdm660/
+24189101975d  ANDROID: Fix cuttlefish redundant vsock connection.  [Alistair Strachan]
+3fcfb1ac6699  UPSTREAM: loop: drop caches if offset or block_size are changed  [Alistair Strachan]
+   * vendor/aosp/
+a9ae516  vendor: Include 1440p bootanimation too  [Aleksander Gencel]
+   * vendor/xiaomi/jasmine/
+a8c92aa  jasmine : add libs  [coderzstas]
+2114935  jasmine : add micam libs and blame xiaomi meme  [coderzstas]
+b1711d9  Update jasmine-vendor.mk  [GitHub]
+9b84887  dont merge . add miui camera from mi a2 and add libs to get it working. for config thanks to @rcstar6696  [coderzstas]
+7ddbea8  drop more cam libs  [coderzstas]
+e9e0e25  jasmine : delete unused blob  [coderzstas]
+8f8a991  jasmine : drop unused libs  [coderzstas]
+dac5d3d  jasmine : drop unused camera libs  [coderzstas]
+3ab06c9  jasmine : camera : fix missing libs update  [coderzstas]
+5d8cde7  jasmine : drop default fingerprint blob  [coderzstas]
+c1b5e68  update libicuuc-v27 and libminikin-v27  [coderzstas]
+09d15f2  drop libsoftkeymaster.  [coderzstas]
+
+====================
+     01-18-2019
+====================
+
+   * device/xiaomi/jasmine/
+8e31c91  jasmine : manifest : add vendor.qti.data.factory  [coderzstas]
+b949735  jasmine : squashed changes *update vendor security patch *update props *update manifest to stock pie  [coderzstas]
+   * device/xiaomi/sdm660-common/
+77b6fec  sdm660:build tone mapper and sdm core  [coderzstas]
+55d5e51  sdm660: adjust p2p configs and service  [coderzstas]
+6a8e80b  sdm660: add qcom perm file  [coderzstas]
+f024b5d  vendor-compatibility: Add factory hal 1.1  [coderzstas]
+fba42f8  steppe: Set property to indicate hardware version  [coderzstas]
+14d6e95  init.qcom.usb.sh: Simplify ESOC check  [coderzstas]
+fb63e46  post_boot: msm8937: Disable core_ctl for 8917  [coderzstas]
+b7206c3  Revert "post_boot: device mode notification to USB driver"  [coderzstas]
+941a2dd  sdm660 : remove nonexist service  [coderzstas]
+a069819  set default lcd_density to 440  [coderzstas]
+a4f7c39  sdm660: Address perf HAL denials with boost enabled  [coderzstas]
+496a0c8  sdm660: Remove forced triple framebuffers  [coderzstas]
+95425c6  sdm660 : squashed changes.  [coderzstas]
+   * kernel/xiaomi/sdm660/
+8f345758051d  sched: hmp: Reduce number of load reports in a window  [GuaiYiHu]
+58e8e42bb0bb  sched: cpufreq: HMP load reporting changes  [GuaiYiHu]
+a21e2d3b0123  core_ctl: Consider high irq loaded CPU as busy  [GuaiYiHu]
+77753b9486fa  PM / devfreq: memlat: Don't ignore extremely latency sensitive workloads  [GuaiYiHu]
+54a66b168985  Revert "msm: kgsl: Do not memset pages to zero while adding to pool"  [GuaiYiHu]
+c67bd441b065  mfd: wcd9xxx: disable slimbus register access for debugfs  [GuaiYiHu]
+7b8646ed576e  msm_cci: fix inconsistent mutex_lock  [GuaiYiHu]
+6eb0c558b34b  msm: memshare: relaese mutex if req client id is not found  [GuaiYiHu]
+6e2bb4e0f979  thermal: qpnp-adc-tm: release lock upon disable_chan_meas failure  [GuaiYiHu]
+f527a7715c08  qcom: qmi: release mutex upon qmi_svc_event_notifier_register error  [GuaiYiHu]
+4378eaec9872  i2c-msm-v2: allow i2c_adapter to retry on arbitration lost  [GuaiYiHu]
+f6e2f41d6ae1  msm_thermal: initialize later than arch drivers  [GuaiYiHu]
+b9d279ca691a  Revert "serial: msm_serial_hs: Protect spurious irqs after wakeup irq enablement"  [GuaiYiHu]
+8050587ff260  pinctrl: qcom: Add irq_enable callback for msm gpio  [GuaiYiHu]
+2191bb91deee  msm: kgsl: Stop slab shrinker when no more pages can be reclaimed  [GuaiYiHu]
+a57c41696ab5  Revert "f_fs: set maxburst to one before enabling endpoints"  [GuaiYiHu]
+94edd474a91d  dwc3: resize txfifo of IN/INT endpoint before enabling it  [GuaiYiHu]
+5406542d769b  Revert "USB: set hub's default autosuspend delay as 0"  [GuaiYiHu]
+52357513b2b1  Revert "usb: hub: Prevent hub autosuspend if usbcore.autosuspend is -1"  [GuaiYiHu]
+7cd1d09d6e93  BACKPORT: usb: host: plat: Enable xHCI plat runtime PM  [GuaiYiHu]
+bb527d84d5b2  ASoC: msm: q6dspv2: vote for Glink Rx thread priority upgrade  [GuaiYiHu]
+5ae699cab260  soc: q6dspv2: add api to vote for upgrading thread priority  [GuaiYiHu]
+   * vendor/xiaomi/jasmine/
+ca3e874  jasmine : possible goodix fix  [coderzstas]
+fd37f90  jasmine :  Update SDM blobs from LA.UM.7.4.r1-04100-8x98.0  [coderzstas]
+dfa30ab  jasmine : squashed changes. *HUGE CLEANUP *Update drm ,gatekeeper,keymaster,audio,wdf,fingerprint,camera,cne,dpm,drm widevine  [coderzstas]
+
+====================
+     01-17-2019
+====================
+
+   * hardware/qcom/display-caf/msm8974/
+33f3c20a9  Make memtrack build with the VNDK.  [Michael Bestas]
+5acc37c93  Add missing includes.  [Michael Bestas]
+e3737eeb3  libmemtrack: Add open method for msm8974.memtrack  [Michael Bestas]
+   * kernel/xiaomi/sdm660/
+b355d4f7ce55  Merge 4.4.171 into android-4.4  [Greg Kroah-Hartman]
+c5feba4358ed  Linux 4.4.171  [Greg Kroah-Hartman]
+9615b6aeccbf  sunrpc: use-after-free in svc_process_common()  [Greg Kroah-Hartman]
+3897b4ae1fdc  ext4: fix a potential fiemap/page fault deadlock w/ inline_data  [Greg Kroah-Hartman]
+6b22de54346b  crypto: cts - fix crash on short inputs  [Greg Kroah-Hartman]
+61dd99c3788d  i2c: dev: prevent adapter retries and timeout being set as minus value  [Greg Kroah-Hartman]
+31f76d65612f  ACPI: power: Skip duplicate power resource references in _PRx  [Greg Kroah-Hartman]
+bb1de61e06c6  PCI: altera: Move retrain from fixup to altera_pcie_host_init()  [Greg Kroah-Hartman]
+2f5e06cf8ff2  PCI: altera: Rework config accessors for use without a struct pci_bus  [Greg Kroah-Hartman]
+db94a1ebabc4  PCI: altera: Poll for link training status after retraining the link  [Greg Kroah-Hartman]
+704a120d8868  PCI: altera: Poll for link up status after retraining the link  [Greg Kroah-Hartman]
+cb3ff0382e58  PCI: altera: Check link status before retrain link  [Greg Kroah-Hartman]
+9efffbc8191d  PCI: altera: Reorder read/write functions  [Greg Kroah-Hartman]
+ecd77ebfa6dd  PCI: altera: Fix altera_pcie_link_is_up()  [Greg Kroah-Hartman]
+271137c03858  slab: alien caches must not be initialized if the allocation of the alien cache failed  [Greg Kroah-Hartman]
+a04afa68c062  USB: Add USB_QUIRK_DELAY_CTRL_MSG quirk for Corsair K70 RGB  [Greg Kroah-Hartman]
+7a87e23537db  USB: storage: add quirk for SMI SM3350  [Greg Kroah-Hartman]
+bbe85dc3ce39  USB: storage: don't insert sane sense for SPC3+ when bad sense specified  [Greg Kroah-Hartman]
+460398af9f97  usb: cdc-acm: send ZLP for Telit 3G Intel based modems  [Greg Kroah-Hartman]
+9c87abaf4d12  cifs: Fix potential OOB access of lock element array  [Greg Kroah-Hartman]
+05ce0d9d5600  CIFS: Do not hide EINTR after sending network packets  [Greg Kroah-Hartman]
+09527e390e81  btrfs: tree-checker: Fix misleading group system information  [Greg Kroah-Hartman]
+40f2dd610635  btrfs: tree-checker: Check level for leaves and nodes  [Greg Kroah-Hartman]
+98620167ed91  btrfs: Verify that every chunk has corresponding block group at mount time  [Greg Kroah-Hartman]
+ee5e37a26791  btrfs: Check that each block group has corresponding chunk at mount time  [Greg Kroah-Hartman]
+50962a7b4877  btrfs: validate type when reading a chunk  [Greg Kroah-Hartman]
+42d263820480  btrfs: tree-checker: Detect invalid and empty essential trees  [Greg Kroah-Hartman]
+ae94efaf2b60  btrfs: tree-checker: Verify block_group_item  [Greg Kroah-Hartman]
+5b84bbce6073  btrfs: tree-check: reduce stack consumption in check_dir_item  [Greg Kroah-Hartman]
+047ac3914e58  btrfs: tree-checker: use %zu format string for size_t  [Greg Kroah-Hartman]
+a8f416492297  btrfs: tree-checker: Add checker for dir item  [Greg Kroah-Hartman]
+7782b38595ae  btrfs: tree-checker: Fix false panic for sanity test  [Greg Kroah-Hartman]
+b3b3eaf72928  btrfs: tree-checker: Enhance btrfs_check_node output  [Greg Kroah-Hartman]
+e74422ec1442  btrfs: Move leaf and node validation checker to tree-checker.c  [Greg Kroah-Hartman]
+68c23d09749e  btrfs: Add checker for EXTENT_CSUM  [Greg Kroah-Hartman]
+56ab82441c33  btrfs: Add sanity check for EXTENT_DATA when reading out leaf  [Greg Kroah-Hartman]
+dc7a1fbccd95  btrfs: Check if item pointer overlaps with the item itself  [Greg Kroah-Hartman]
+4583bc2c6420  btrfs: Refactor check_leaf function for later expansion  [Greg Kroah-Hartman]
+31c986aa7e69  btrfs: struct-funcs, constify readers  [Greg Kroah-Hartman]
+89643604a879  Btrfs: fix emptiness check for dirtied extent buffers at check_leaf()  [Greg Kroah-Hartman]
+452042d27b6d  Btrfs: memset to avoid stale content in btree leaf  [Greg Kroah-Hartman]
+79ddacdf1df2  Btrfs: kill BUG_ON in run_delayed_tree_ref  [Greg Kroah-Hartman]
+d6719cf116b2  Btrfs: improve check_node to avoid reading corrupted nodes  [Greg Kroah-Hartman]
+731b86679528  Btrfs: memset to avoid stale content in btree node block  [Greg Kroah-Hartman]
+4b522570f974  Btrfs: fix BUG_ON in btrfs_mark_buffer_dirty  [Greg Kroah-Hartman]
+1ef3ecf373ae  Btrfs: check btree node's nritems  [Greg Kroah-Hartman]
+dc059e58af01  Btrfs: detect corruption when non-root leaf has zero item  [Greg Kroah-Hartman]
+4bf414d2ff57  Btrfs: fix em leak in find_first_block_group  [Greg Kroah-Hartman]
+a155ec932226  Btrfs: check inconsistence between chunk and block group  [Greg Kroah-Hartman]
+41fbc649308c  Btrfs: add validadtion checks for chunk loading  [Greg Kroah-Hartman]
+66b8c06f9365  btrfs: Enhance chunk validation check  [Greg Kroah-Hartman]
+67405a1e780c  btrfs: cleanup, stop casting for extent_map->lookup everywhere  [Greg Kroah-Hartman]
+fea03efa24d4  ALSA: hda/realtek - Disable headset Mic VREF for headset mode of ALC225  [Greg Kroah-Hartman]
+e137948e4b11  UPSTREAM: virtio: new feature to detect IOMMU device quirk  [Alistair Strachan]
+7389e826abae  UPSTREAM: vring: Use the DMA API on Xen  [Alistair Strachan]
+6bb68f96a00a  UPSTREAM: virtio_ring: Support DMA APIs  [Alistair Strachan]
+dbe5b486ca9a  UPSTREAM: vring: Introduce vring_use_dma_api()  [Alistair Strachan]
+
+====================
+     01-16-2019
+====================
+
+   * device/xiaomi/sdm660-common/
+1340506  sdm660: overlay: disable proximity check for torch  [coderzstas]
+ab6a938  sdm660: keylayout: report system navigation down on fp touch  [coderzstas]
+   * kernel/xiaomi/sdm660/
+5ec66a676736  ANDROID: cuttlefish_defconfig: Enable vsock options  [Alistair Strachan]
+06477f7ef8c1  UPSTREAM: vhost/vsock: fix reset orphans race with close timeout  [Alistair Strachan]
+e633b6d8e0df  UPSTREAM: vhost/vsock: fix use-after-free in network stack callers  [Alistair Strachan]
+eb2ca3c19653  UPSTREAM: vhost: correctly check the iova range when waking virtqueue  [Alistair Strachan]
+732e0b13c5d1  UPSTREAM: vhost: synchronize IOTLB message with dev cleanup  [Alistair Strachan]
+f46187d14af3  UPSTREAM: vhost: fix info leak due to uninitialized memory  [Alistair Strachan]
+6619733eab40  UPSTREAM: vhost: fix vhost_vq_access_ok() log check  [Alistair Strachan]
+167925fc0eff  UPSTREAM: vhost: validate log when IOTLB is enabled  [Alistair Strachan]
+579cd6fe1e70  UPSTREAM: vhost_net: add missing lock nesting notation  [Alistair Strachan]
+b2696b4a37bd  UPSTREAM: vhost: use mutex_lock_nested() in vhost_dev_lock_vqs()  [Alistair Strachan]
+b53fc49147e2  UPSTREAM: vhost/vsock: fix uninitialized vhost_vsock->guest_cid  [Alistair Strachan]
+ea183988dee1  UPSTREAM: vhost_net: correctly check tx avail during rx busy polling  [Alistair Strachan]
+d6c52dda2c08  UPSTREAM: vsock: use new wait API for vsock_stream_sendmsg()  [Alistair Strachan]
+821984ea0cac  UPSTREAM: vsock: cancel packets when failing to connect  [Alistair Strachan]
+8d30307c8dc9  UPSTREAM: vhost-vsock: add pkt cancel capability  [Alistair Strachan]
+2b8dd4215e44  UPSTREAM: vsock: track pkt owner vsock  [Alistair Strachan]
+982b533c5d2b  UPSTREAM: vhost: fix initialization for vq->is_le  [Alistair Strachan]
+7f320a93701c  UPSTREAM: vhost/vsock: handle vhost_vq_init_access() error  [Alistair Strachan]
+d8e26f878c35  UPSTREAM: vsock: lookup and setup guest_cid inside vhost_vsock_lock  [Alistair Strachan]
+f95e936b327d  UPSTREAM: vhost-vsock: fix orphan connection reset  [Alistair Strachan]
+de7a923e3093  UPSTREAM: vsock/virtio: fix src/dst cid format  [Alistair Strachan]
+704b8c6108c0  UPSTREAM: VSOCK: Don't dec ack backlog twice for rejected connections  [Alistair Strachan]
+ddabe560202a  UPSTREAM: vhost/vsock: drop space available check for TX vq  [Alistair Strachan]
+72e3ee7594c8  UPSTREAM: virtio-vsock: fix include guard typo  [Alistair Strachan]
+613ffe183896  UPSTREAM: vhost/vsock: fix vhost virtio_vsock_pkt use-after-free  [Alistair Strachan]
+b09cc234f36b  UPSTREAM: VSOCK: Use kvfree()  [Alistair Strachan]
+80090036d471  BACKPORT: vhost: split out vringh Kconfig  [Alistair Strachan]
+ec5d426be248  UPSTREAM: vhost: drop vringh dependency  [Alistair Strachan]
+7fcee9753439  UPSTREAM: vhost: drop vringh dependency  [Alistair Strachan]
+a2a85e6807dc  UPSTREAM: vhost: detect 32 bit integer wrap around  [Alistair Strachan]
+e177c82ed1fa  UPSTREAM: VSOCK: Add Makefile and Kconfig  [Alistair Strachan]
+01a1cf6063b4  UPSTREAM: VSOCK: Introduce vhost_vsock.ko  [Alistair Strachan]
+60c196454277  UPSTREAM: VSOCK: Introduce virtio_transport.ko  [Alistair Strachan]
+d5590af888cb  BACKPORT: VSOCK: Introduce virtio_vsock_common.ko  [Alistair Strachan]
+716adf173f7f  UPSTREAM: VSOCK: defer sock removal to transports  [Alistair Strachan]
+3fc44c12b2c4  UPSTREAM: VSOCK: transport-specific vsock_transport functions  [Alistair Strachan]
+a598d93c2a3a  UPSTREAM: vsock: make listener child lock ordering explicit  [Alistair Strachan]
+0f0ec3accb21  UPSTREAM: vhost: new device IOTLB API  [Alistair Strachan]
+2fb5f444a82f  BACKPORT: vhost: convert pre sorted vhost memory array to interval tree  [Alistair Strachan]
+ec8d83a0748a  UPSTREAM: vhost: introduce vhost memory accessors  [Alistair Strachan]
+6b9b4adc1feb  UPSTREAM: vhost_net: stop polling socket during rx processing  [Alistair Strachan]
+708df0e257da  UPSTREAM: VSOCK: constify vsock_transport structure  [Alistair Strachan]
+e6fdb474765f  UPSTREAM: vhost: lockless enqueuing  [Alistair Strachan]
+773bac0e1f14  UPSTREAM: vhost: simplify work flushing  [Alistair Strachan]
+7103ea77d35b  UPSTREAM: VSOCK: Only check error on skb_recv_datagram when skb is NULL  [Alistair Strachan]
+4c634053305d  BACKPORT: AF_VSOCK: Shrink the area influenced by prepare_to_wait  [Alistair Strachan]
+6c81476a7cbc  UPSTREAM: vhost_net: basic polling support  [Alistair Strachan]
+29181c5bfa69  UPSTREAM: vhost: introduce vhost_vq_avail_empty()  [Alistair Strachan]
+2dd59f910bfd  UPSTREAM: vhost: introduce vhost_has_work()  [Alistair Strachan]
+a5de7503e90d  UPSTREAM: vhost: rename vhost_init_used()  [Alistair Strachan]
+2ab0816efdda  UPSTREAM: vhost: rename cross-endian helpers  [Alistair Strachan]
+6ef11fba4c33  UPSTREAM: vhost: fix error path in vhost_init_used()  [Alistair Strachan]
+c7c7d1506cb8  UPSTREAM: virtio: make find_vqs() checkpatch.pl-friendly  [Alistair Strachan]
+3576d75c8de3  UPSTREAM: net: move napi_hash[] into read mostly section  [Alistair Strachan]
+8ba9b3822116  drivers: leds-qpnp-flash: Fix infinite loop in flash driver.  [Max Weffers]
+135cb4d95022  Revert "leds: leds-qpnp-flash: synchronize LED switch node operation"  [Max Weffers]
+09da7012a38e  drivers: leds-qpnp-flash: Synchronize brightness_set and worker thread  [Max Weffers]
+68837645e523  Improve camera power consumption  [Max Weffers]
+96cc7edca993  Improve camera power consumption  [Max Weffers]
+c895694eeae7  msm: camera: flash: Fix i2c flash  [Max Weffers]
+a51aec640533  sched: hmp: Reduce number of load reports in a window  [Max Weffers]
+0f816fa29462  sched: cpufreq: HMP load reporting changes  [Max Weffers]
+7c3a93f1995f  core_ctl: Consider high irq loaded CPU as busy  [Max Weffers]
+9c64f96efe01  PM / devfreq: memlat: Don't ignore extremely latency sensitive workloads  [Max Weffers]
+08ebaa009fa1  Revert "msm: kgsl: Disallow L2PC during wake up from SLUMBER"  [Max Weffers]
+33fc40010913  Revert "msm: kgsl: Do not memset pages to zero while adding to pool"  [Max Weffers]
+d86166b39560  mfd: wcd9xxx: disable slimbus register access for debugfs  [Max Weffers]
+b663b4db1bfe  msm_cci: fix inconsistent mutex_lock  [Max Weffers]
+e842ffb4914d  msm: memshare: relaese mutex if req client id is not found  [Max Weffers]
+cdf3a408f3a8  thermal: qpnp-adc-tm: release lock upon disable_chan_meas failure  [Max Weffers]
+636bb8153b14  qcom: qmi: release mutex upon qmi_svc_event_notifier_register error  [Max Weffers]
+6fb7e19f7e2e  msm-poweroff: move panic detection out from CONFIG_QCOM_DLOAD_MODE  [Max Weffers]
+4a4b382ac71f  msm_thermal: initialize later than arch drivers  [Max Weffers]
+310d1bda1cc0  firmware: add /lib/firmware/overrides as the top priority  [Max Weffers]
+67383b944f53  sdm660: fix memory overlap  [Max Weffers]
+a44eda279812  sdm660: fix node values for qcom,msm-core@780000  [Max Weffers]
+3c94ff967a3a  Merge branch 'mkp' of https://github.com/GuaiYiHu/android_kernel_xiaomi_whyred into HEAD  [Max Weffers]
+d5f86a74ab3a  qpnp-haptic: make its strength adjustable via VibratorHW  [Max Weffers]
+   * vendor/xiaomi/jasmine/
+f47b704  jasmine : remove libOmxG711Enc and fix derp  [coderzstas]
+6e9bc66  jasmine: Update SDM blobs from Nokia D1C credits - krasCGQ  [coderzstas]
+
+====================
+     01-15-2019
+====================
+
+   * device/xiaomi/jasmine/
+c01321f  jasmine: Use pixel 2 vibration pattern  [coderzstas]
+940b6c4  jasmine : overlay : update Brightness values from wayne miui 9.1.9  [coderzstas]
+   * device/xiaomi/sdm660-common/
+91bb530  sdm660: productconfig : update audio flags *remove duplicate  [coderzstas]
+2da52f6  sdm660: kcal: fix crash if you go back to xiaomi parts  [coderzstas]
+   * kernel/xiaomi/sdm660/
+acb5ff1905fd  ANDROID: cuttlefish_defconfig: remove DM_VERITY_HASH_PREFETCH_MIN_SIZE  [Alistair Strachan]
+ec8fcb232d83  Revert "ANDROID: dm verity: add minimum prefetch size"  [Alistair Strachan]
+c69bfa0ff38e  ANDROID: f2fs: Complement "android_fs" tracepoint of read path  [Alistair Strachan]
+
+====================
+     01-14-2019
+====================
+
+   * device/xiaomi/sdm660-common/
+cd22c81  sdm660 : light hal : do not detect maximum brightness dynamically  [coderzstas]
+   * kernel/xiaomi/sdm660/
+ca9df50f19c6  Merge branch 'kernel.lnx.4.4.r34-rel' of https://github.com/android-linux-stable/msm-4.4 into HEAD  [Max Weffers]
+926f2c98050f  Merge 4.4.170 into kernel.lnx.4.4.r34-rel  [Nathan Chancellor]
