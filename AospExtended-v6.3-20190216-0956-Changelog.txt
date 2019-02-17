@@ -1,0 +1,606 @@
+====================
+     02-14-2019
+====================
+
+   * device/xiaomi/sdm660-common/
+60a75a1  sdm660: XiaomiParts: Fix Dirac - Use a service  [Max Weffers]
+   * frameworks/base/
+9820f46c56c  Automatic translation import  [Shubham Singh]
+   * kernel/xiaomi/sdm660/
+ca8ae501abaf  sdm660: defconfig: enable wireguard  [Max Weffers]
+389805287235  net: import WireGuard version 0.0.20181218  [Max Weffers]
+   * packages/apps/DeskClock/
+e626e7090  Automatic translation import  [Shubham Singh]
+   * packages/apps/Extensions/
+8683cbb0  Automatic translation import  [Shubham Singh]
+8e6c49c2  v6.3 [1/2]  [Shubham Singh]
+   * packages/apps/FMRadio/
+e7fdb30  Automatic translation import  [Shubham Singh]
+   * packages/apps/Launcher3/
+c6123dc2e  Automatic translation import  [Shubham Singh]
+   * packages/apps/Messaging/
+c933b93  Automatic translation import  [Shubham Singh]
+   * packages/apps/Settings/
+dbc0e71f53  Automatic translation import  [Shubham Singh]
+3621b034e8  Settings: Add AGPS setting menu.  [AmolAmrit]
+64d53fdf18  Settings: Add FINE_LOCATION for Bluetooth scans  [AmolAmrit]
+   * packages/apps/SmartNavSettings/
+179ca36  Automatic translation import  [Shubham Singh]
+   * packages/apps/Updates/
+d24f3e9  Automatic translation import  [Shubham Singh]
+   * packages/providers/DownloadProvider/
+71ff320  Automatic translation import  [Shubham Singh]
+   * vendor/aosp/
+c578e3f  Vendor:Update prebuilt apks  [Gaurav Singh]
+0a8bad5  v6.3 [2/2]  [Shubham Singh]
+
+====================
+     02-13-2019
+====================
+
+   * device/qcom/sepolicy-legacy/
+f2a1c0b  sepolicy: legacy: Eliminate qemu_hw_mainkeys_prop entries  [sb6596]
+e26e4f1  common: permit libqdutils operation (linked by mediaserver) during WFD  [sb6596]
+   * frameworks/base/
+f6c3deae772  Add Compass tile  [sb6596]
+4d3bed1444f  Clean receivers completely when forceStop the process  [AmolAmrit]
+1db95ac043e  Fix a 'memory leak'  [AmolAmrit]
+60af85a6bfe  Keyguard: Avoid starting FP authentication right after cancelling  [AmolAmrit]
+9316b9733f8  Adjust AsyncTask.THREAD_POOL_EXECUTOR config  [AmolAmrit]
+1e690e4888b  camera: Skip HFR checks for privileged apps.  [AmolAmrit]
+74049e8dca1  Remove the check of mService when BluetoothHidDevice doUnbind  [AmolAmrit]
+28f26d1d090  services: Fix two Jobscheduler bugs  [AmolAmrit]
+66843ad5ca0  core: Fix switching fragment appears white screen  [AmolAmrit]
+35e0d1a5bb5  Fix motion event offset of DecorView is moved in the window  [AmolAmrit]
+419dd860447  Include InCallNotification.ogg in AllAudio.mk file  [AmolAmrit]
+4091abbfd88  Informing app idle listeners on enabled state changes  [AmolAmrit]
+e0ec8d6f371  graphics: Avoid crash issue of createBitmap  [AmolAmrit]
+72fabb6ead5  continue read file when returned count > 0  [AmolAmrit]
+eb5f0d7c052  Add synchronization for invokeForAllObservers call  [AmolAmrit]
+c8f3d971d27  SystemUI: Fix an issue where jumping to black after screen turned on  [AmolAmrit]
+aafbaf9b406  SystemUI: Fix NPE when DozeService is destroied  [AmolAmrit]
+14a4f9300f4  Revert "Disable statusbar time refresh when screen off"  [AmolAmrit]
+19779ae12a9  frameworks/base: media: Add support for extended file types  [AmolAmrit]
+c757c1df8d2  audio: add support for extended formats  [AmolAmrit]
+f13775bdb28  UXE: Recents app detection & Refactor  [AmolAmrit]
+9040d3a81b8  uxe: Check memory pressure before starting empty app.  [AmolAmrit]
+b2cfe979452  framework/base: optimize multi-thread code  [AmolAmrit]
+ef80181fd7e  BoostFramework: Implement asynchronous processing of perflocks  [AmolAmrit]
+5828c76fb23  fix deadlock of binder thread and ActivityManager  [AmolAmrit]
+aabadeb143b  Fix deadlock in AcitivityManagerService  [AmolAmrit]
+6a664213531  Ensure cgroup.procs in the same cgroup  [AmolAmrit]
+49e98992f67  AMS: Fix the null pointer exception in MainHandler:handleMessage  [AmolAmrit]
+8bf1d7fe311  AMS: Uncatch the IllegalStateException cause process crash  [AmolAmrit]
+431c78f8426  AMS: Fix the null pointer exception in IntentResolver  [AmolAmrit]
+1064314e3e2  GlobalActionsDialog: Fix emergency icon on dark theme  [Shubham Singh]
+c4ebbd22c1a  Revert "Fix emergency icon tinting"  [Shubham Singh]
+e5e2dddcdf9  StatusBarSignalPolicy: Fix missing provisioned in equals and copyTo  [Shubham Singh]
+9a0c6f37156  StatusBarSignalPolicy: Sync with lineage  [Shubham Singh]
+e007bc92141  Revert "StatusBarSignalPolicy: Fix NPE due do ext telephony"  [Shubham Singh]
+8073424a8da  Fix emergency icon tinting  [Arghya Chanda]
+   * frameworks/opt/telephony/
+2c617f178  RIL: Allow overriding RadioResponse and RadioIndication  [GtrCraft]
+   * hardware/qcom/display-caf/apq8084/
+215f9732b  Make memtrack build with the VNDK.  [Corinna Vinschen]
+7676dcabb  Add missing includes.  [Corinna Vinschen]
+bdf8b28bf  libmemtrack: Add open method for apq8084.memtrack  [Corinna Vinschen]
+a59401577  display: Use generated kernel headers  [Corinna Vinschen]
+3ac0314c9  hal: Added LOCAL_VENDOR_MODULE to set output path of the binaries  [Corinna Vinschen]
+a04c97c6c  Use header lib instead of using global include path  [Corinna Vinschen]
+   * hardware/qcom/media-caf/apq8084/
+020312314  Revert "media: Avoid collision with FFMPEG plugin"  [Bruno Martins]
+   * hardware/ril-caf/
+b475875  Encode the Number of MNC Digits in CellIdentity  [Michael Bestas]
+   * packages/apps/Settings/
+35b1deba8b  Aboutus: Refresh our intro  [AmolAmrit]
+   * packages/services/Telecomm/
+e7fe7b67  Telecomm: Update drawable added on latest commit  [Arghya Chanda]
+2626cd05  Telecomm: Improve dark theme  [Arghya Chanda]
+   * packages/services/Telephony/
+4deafd794  Automatic translation import  [AmolAmrit]
+69df4dbeb  Fix carrier config option not hidden on a CDMA phone  [Shubham Singh]
+19fcfb009  Fix non-protected broadcasts sent from phone process.  [Shubham Singh]
+e8cfe1680  Telephony: Support muting by RIL command  [GtrCraft]
+f8fa1eeba  Don't start SIP service before decrypted  [Shubham Singh]
+   * vendor/aosp/
+7e7ad09  Update toast bg color  [Arghya Chanda]
+465687d  Let's dark theme match Dialer and Messaging app  [Arghya Chanda]
+b61c4b7  Fix system dialog theme  [Arghya Chanda]
+2269d7d  Change notifications theming overlays  [Arghya Chanda]
+9129ac7  Use dark theme on global actions/volume panel  [Arghya Chanda]
+1e62210  Thematize QS and notifications like Android Q  [Arghya Chanda]
+
+====================
+     02-12-2019
+====================
+
+   * device/qcom/sepolicy-legacy/
+035d161  Display: Remove vendor property context for lcd density  [sb6596]
+6c07bd2  legacy: Label some more sysfs_net  [sb6596]
+aed6a32  common: Allow webview_zygote to read /dev/ion  [sb6596]
+ff0cf68  sepolicy: legacy: add additional usb charging path label  [sb6596]
+4cd4142  legacy: Label msm8916 sysfs_disk_stat  [sb6596]
+1275580  legacy: Label msm8916 sysfs_android_usb  [sb6596]
+33815b5  sepolicy: Add vendor prefix to FM properties  [sb6596]
+2f3102f  legacy: Label msm8916 sysfs_{battery,usb}_supply  [sb6596]
+cb35f6e  common: relabel /sys/module/tcp_cubic for netmgrd access  [sb6596]
+89777f5  common: label /sys/devices/virtual/net/* as sysfs_net  [sb6596]
+b6db20c  common: allow sensors HIDL HAL to access /dev/sensors  [sb6596]
+b44a55a  sepolicy: Add permissions for LCD brightness control  [sb6596]
+ec05821  sepolicy: Allow mm-qcamerad use appdomain fd  [sb6596]
+94ca123  sepolicy: Label msm8974 devfreq sysfs  [sb6596]
+27c455b  sepolicy: Label msm_pm sysfs as sysfs_msm_perf  [sb6596]
+64716ca  sepolicy: Label msm8974 leds-qpnp sysfs  [sb6596]
+0ec2f2a  sepolicy: Label msm8974 lcd-backlight sysfs  [sb6596]
+10eb98a  sepolicy: Label msm8974 sysfs_ssr_toggle  [sb6596]
+2ec212d  sepolicy: Label sysfs_android_usb  [sb6596]
+e62a7bf  sepolicy: Label sysfs_disk_stat nodes  [sb6596]
+c5e32f3  sepolicy: Label more qpnp-charger sysfs as sysfs_battery_supply  [sb6596]
+450d1c1  Use new vendor_wifi_prop label for bluetooth_loader  [sb6596]
+dea5e21  wcnss-service: Add sepolicy to access "vendor.wlan." property  [sb6596]
+d3ba3e4  sepolicy: Add vendor wifi prop in vendor partition access  [sb6596]
+3460d3a  Revert "sepolicy: Allow wcnss_service to set wlan.driver properties"  [sb6596]
+ce5315e  legacy: Label /sys/devices/mdp.0/caps  [sb6596]
+ab6e823  sepolicy: Fix label of qpnp-charger sysfs  [sb6596]
+08d5982  sepolicy: Add type vendor_display_prop for legacy devices  [sb6596]
+6c9f247  legacy: Allow platform_app to read qemu_hw_mainkeys_prop  [sb6596]
+7293fcf  sepolicy: Add additional restricted permissions to vendor_init  [sb6596]
+52d9c2d  Remove vendor se-labelling of AOSP's qemu.hw.mainkeys prop.  [sb6596]
+e00e834  common: allow vendor_init to create /data/dpm  [sb6596]
+8fbeff2  common: allow uevent to control sysfs_mmc_host via vold  [sb6596]
+bf504e9  common: create proc_kernel_sched domain to restrict perf hal access  [sb6596]
+75b8a98  common: grant DRM HIDL HAL ownership access to /data/{misc,vendor}/media/  [sb6596]
+305b0bc  common: grant cnss-daemon access to sysfs_net  [sb6596]
+bfd1a91  common: grant netmgrd access to sysfs_net nodes  [sb6596]
+2e58f24  common: fix sensors denial  [sb6596]
+   * external/chromium-webview/
+fbc003a  Update x86/x64 Chromium Webviews to 71.0.3578.99  [Tim Schumacher]
+   * frameworks/base/
+541478fb4cd  ActionHandler: Bring back one-hand mode action  [Shubham Singh]
+e582caa8de8  SystemUI: add toggle for the onehand ui mode [1/2]  [Shubham Singh]
+   * hardware/qcom/wlan-caf/
+9a9fda5  wcnss-service: Opt-in to disable copying WCNSS_qcom_cfg.ini to userdata  [Michael Bestas]
+   * packages/apps/DocumentsUI/
+9a6e9712  Use white navbar for DocumentsUI as well  [Arghya Chanda]
+0e1c5a39  DocumentsUI: Improve dark theme  [Arghya Chanda]
+d8361039  Theme improvements  [Arghya Chanda]
+dfa95697  DocumentsUI: Thematize navbar on dark theme  [Arghya Chanda]
+332598e2  DocumentsUI: support night mode  [Arghya Chanda]
+   * packages/apps/SmartNavSettings/
+8bfaf86  add toggle for the onehand ui mode [2/2]  [Shubham Singh]
+   * packages/services/Telephony/
+87c7fd6ee  Vectorize sip icon  [Arghya Chanda]
+8a0580ae0  Telephony: Improve dark theme  [Arghya Chanda]
+
+====================
+     02-11-2019
+====================
+
+   * build/make/
+109f8e47c  build: core: Allow devices to use vendor security patch on boot  [Aayush Gupta]
+   * device/xiaomi/sdm660-common/
+53fdd60  sdm660: Update fingerprint to PQ2A.190205.002  [Max Weffers]
+eca84f0  Revert "sdm660 : light hal : do not detect maximum brightness dynamically"  [Max Weffers]
+   * frameworks/av/
+27e7cc581  Visualizer: fix native crash when visualizer release  [ShevT]
+   * frameworks/base/
+f18c93f1e73  SystemUI: Add one hand mode triggers  [Shubham Singh]
+5f263687f97  Add new feature of One-hand UI Mode  [Shubham Singh]
+0eb5115a26a  SystemUI: fix landscape powermenu layout  [Shubham Singh]
+d1c87437912  Add wellbeing dark theme  [Shubham Singh]
+30deed9e08b  Ambient Music: show on lockscreen only for Now Playing and cleanup code  [Shubham Singh]
+316bca9885d  Fix action bar font family on material themes  [Shubham Singh]
+74b0030aa71  UiModeManagerService: Store messaging night state on Settings class  [Shubham Singh]
+d1cf3201948  StatusBar: Silence logspam  [Shubham Singh]
+ee5b8ad0a29  Statusbar clock: restore qsheader check within a saved instance  [Shubham Singh]
+27d90d62a9a  Themes: Lock day night mode  [Shubham Singh]
+0504b79d668  Themes: Fix animation issue when opening Messaging app  [Shubham Singh]
+b8c471fda63  Themes: Workaround to fix dark theme on Messaging app  [Shubham Singh]
+ea271bdcd5f  Fix notifications for some apps if Less notification sounds is enabled  [AmolAmrit]
+af1d061c4bc  Bring back less notification sounds [1/2]  [AmolAmrit]
+04002c4dc07  Allow to suppress notifications sound/vibration if screen is On [1/2]  [AmolAmrit]
+0b79200452a  Add kill button to notification guts [1/2]  [AmolAmrit]
+4d6a9e1a3b6  Live Volume Steps [1/2]  [AmolAmrit]
+1a130b20e15  base: incall vibration options [2/3]  [AmolAmrit]
+e2cf119b72c  Support more Network modes for LTE-tile.  [ShevT]
+444b82ef463  LteTile: multisim compatibility  [ShevT]
+c4dd083f0bc  SystemUI:Add LTE Tile  [ShevT]
+7be46c376d3  Visualizer: fix native crash when visualizer release  [ShevT]
+071f14bdbcf  core: Fix vendor override when properties are not set  [GtrCraft]
+735a0a9fce8  core: Add support for overriding vendor properties (1/2)  [GtrCraft]
+   * frameworks/native/
+e2f9777ea  Translate pointer motion events for One-hand UI Mode  [Shubham Singh]
+   * kernel/xiaomi/sdm660/
+7a70b0d0cc0f  LA.UM.7.2.r1-05900  [Max Weffers]
+09bef1c63c54  Merge branch 'mkp' of https://github.com/GuaiYiHu/android_kernel_xiaomi_whyred into redo  [Max Weffers]
+d0746cb9fab1  Merge branch 'kernel.lnx.4.4.r34-rel' of https://github.com/android-linux-stable/msm-4.4 into redo  [Max Weffers]
+ec2499ea02c7  Merge tag 'LA.UM.7.2.r1-05900-sdm660.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0 into redo "LA.UM.7.2.r1-05900-sdm660.0"  [Max Weffers]
+55f2b6829be6  Merge tag 'LA.UM.7.2.r1-05900-sdm660.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/fw-api into redo  [Max Weffers]
+f1918e8bfcd2  Merge tag 'LA.UM.7.2.r1-05900-sdm660.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.4 into redo "LA.UM.7.2.r1-05900-sdm660.0"  [Max Weffers]
+   * packages/apps/Dialer/
+48e225484  Dialer: Remove In-Call Vibrations  [AmolAmrit]
+f038f4967  Add toggle for post call snackbar  [ShevT]
+   * packages/apps/Extensions/
+293c558f  Bring back less notification sounds [2/2]  [AmolAmrit]
+f3656aed  Allow to suppress notifications sound/vibration if screen is On [2/2]  [AmolAmrit]
+a6f7fd2e  Add kill button to notification guts [2/2]  [AmolAmrit]
+06c47e13  Extensions: Update Strings  [AmolAmrit]
+191185d2  incall vibration options [3/3]  [AmolAmrit]
+2b9f0724  Live Volume Steps [2/2]  [AmolAmrit]
+   * packages/apps/Settings/
+7a95f43425  deviceinfo: Show vendor override also on build number dialog  [GtrCraft]
+2cddc7b267  deviceinfo: Add support for overriding vendor properties (2/2)  [GtrCraft]
+   * packages/services/Telecomm/
+fcad7fcd  incall vibration options [2/3]  [AmolAmrit]
+   * packages/services/Telephony/
+f44a827b9  Implement toggleLte Using logic based on Ryan Hope's commits  [ShevT]
+   * vendor/aosp/
+9052dc7  Fix light statusbar and navbar on Wellbeing  [Shubham Singh]
+bbc750b  Add wellbeing dark theme variants  [Shubham Singh]
+1a0101e  vendor: Theme about icon bg  [Shubham Singh]
+
+====================
+     02-10-2019
+====================
+
+   * device/aosp/sepolicy/
+03f2977  sepolicy: Allow Settings to read ro.vendor.build.security_patch  [sb6596]
+170e421  Snap and gallery require to run vendor code  [sb6596]
+c5370b8  Remove not allowed rule  [sb6596]
+44189f5  Revert "common: Add sf_lcd_density_prop type and labelled props"  [sb6596]
+d5bee98  qcom: Remove power HAL 1.0 label  [sb6596]
+c80a547  common: Improve label of I/O sched tuning nodes  [sb6596]
+d644946  aosp: Address perf HAL denial with boost enabled  [sb6596]
+5d669d0  common: Allow init to relabel I/O sched tuning nodes  [sb6596]
+62a4533  common: Expand labeling of sysfs_vibrator nodes using genfscon  [sb6596]
+5e5c67a  Make A/B backuptool permissive  [sb6596]
+851236e  selinux: add domain for Gallery  [sb6596]
+   * system/sepolicy/
+010e2dd7  sepolicy: public: add TCSETSF to the list of unprivileged TTY ioctls  [sb6596]
+74efcbd8  Android.mk: remove some build-log spam  [sb6596]
+80da9fd8  uncrypt: Allow opening OTA package as rw  [sb6596]
+8808b1e7  Allow fsck_untrusted to getattr block_device  [sb6596]
+409cad17  Add missing pm.* properties in property_contexts  [sb6596]
+e64a41d5  sepolicy: create rules for system properties  [sb6596]
+4f1b5b81  Allow dnsmasq to getattr netd unix_stream_socket  [sb6596]
+930f56dc  Use LOCAL_ADDITIONAL_M4DEFS for file_contexts  [sb6596]
+24ce814f  Allow init to chmod/chown /proc/slabinfo  [sb6596]
+b4640369  Allow init to write to /proc/cpu/alignment  [sb6596]
+9731c176  Allow mediaserver to read device directories  [sb6596]
+
+====================
+     02-09-2019
+====================
+
+   * hardware/broadcom/libbt/
+0919027  libbt: Align Samsung CID strings to those created by macloader  [Kevin F. Haggerty]
+   * kernel/xiaomi/sdm660/
+1ca0c5394b33  Merge 4.4.174 into kernel.lnx.4.4.r34-rel  [Nathan Chancellor]
+   * manifest/
+6a7afd6  Readme: Fix up header  [Shubham Singh]
+e5390b3  Update qcom repositories groups  [Shubham Singh]
+8188399  manifest: Add AOSP SDM845 HALs  [Shubham Singh]
+15e4030  Switch to los's chromium-webview fork  [Shubham Singh]
+fbe123d  manifest: Switch to skia fork  [Shubham Singh]
+9ee4b18  manifest: Switch to los's timezone and ICU forks  [Shubham Singh]
+ee509e6  Remove rcs-services repo  [Shubham Singh]
+
+====================
+     02-08-2019
+====================
+   * art/
+68dc0404d0  Merge tag 'android-9.0.0_r31' into HEAD  [Shubham Singh]
+   * bionic/
+f22b193a4  Merge tag 'android-9.0.0_r31' into HEAD  [Shubham Singh]
+   * bootable/recovery/
+76c06f7c  Merge tag 'android-9.0.0_r31' into HEAD  [Shubham Singh]
+   * build/kati/
+af8d574  Merge tag 'android-9.0.0_r31' into HEAD  [Shubham Singh]
+   * build/make/
+b63b0efa8  Merge tag 'android-9.0.0_r31' into HEAD  [Shubham Singh]
+   * frameworks/av/
+6e71e26ea  Merge tag 'android-9.0.0_r31' into HEAD  [Shubham Singh]
+   * frameworks/base/
+f68b04a75a5  ActivityRecord: add fw boost after r31 merge  [Shubham Singh]
+3076927a4a3  Merge tag 'android-9.0.0_r31' into HEAD  [Shubham Singh]
+   * frameworks/native/
+097672d3b  Merge tag 'android-9.0.0_r31' into HEAD  [Shubham Singh]
+   * frameworks/opt/net/wifi/
+8a6bc9466  Merge tag 'android-9.0.0_r31' into HEAD  [Shubham Singh]
+   * frameworks/opt/telephony/
+b2e082419  Merge tag 'android-9.0.0_r31' into HEAD  [Shubham Singh]
+   * hardware/interfaces/
+75e797f3  Merge tag 'android-9.0.0_r31' into HEAD  [Shubham Singh]
+   * hardware/qcom/media-caf/apq8084/
+fd36f77fd  media: Use generated kernel headers  [Corinna Vinschen]
+3fe787adc  Add -Wno-error to compile with global -Werror.  [Corinna Vinschen]
+4cc25ca7b  Build libstagefrighthw with BOARD_VNDK_VERSION  [Corinna Vinschen]
+4a86c80bf  Build libc2dcolorconvert with BOARD_VNDK_VERSION  [Corinna Vinschen]
+ea15be0a7  Build mm-video-v4l2 with BOARD_VNDK_VERSION  [Corinna Vinschen]
+a901ed3d0  mm-video-v4l2: Fix KW resported issues  [Corinna Vinschen]
+   * kernel/xiaomi/sdm660/
+dc5e8c99975b  Linux 4.4.174  [Greg Kroah-Hartman]
+60c7f8fca1bb  rcu: Force boolean subscript for expedited stall warnings  [Greg Kroah-Hartman]
+873beab3740a  net: ipv4: do not handle duplicate fragments as overlapping  [Greg Kroah-Hartman]
+0836bdfee568  net: fix pskb_trim_rcsum_slow() with odd trim offset  [Greg Kroah-Hartman]
+e92b8475d6d7  inet: frags: better deal with smp races  [Greg Kroah-Hartman]
+acd00a069207  ipv4: frags: precedence bug in ip_expire()  [Greg Kroah-Hartman]
+cb5fd4aa24b5  ip: frags: fix crash in ip_do_fragment()  [Greg Kroah-Hartman]
+2822475e70db  ip: process in-order fragments efficiently  [Greg Kroah-Hartman]
+2039bd8669f4  ip: add helpers to process in-order fragments faster.  [Greg Kroah-Hartman]
+3f78a3f45e79  ip: use rb trees for IP frag queue.  [Greg Kroah-Hartman]
+7fab8b2f0c99  net: pskb_trim_rcsum() and CHECKSUM_COMPLETE are friends  [Greg Kroah-Hartman]
+5f2d68b6b5a4  ipv6: defrag: drop non-last frags smaller than min mtu  [Greg Kroah-Hartman]
+26cfea3c1d04  net: modify skb_rbtree_purge to return the truesize of all purged skbs.  [Greg Kroah-Hartman]
+ef0f963de1d2  ip: discard IPv4 datagrams with overlapping segments.  [Greg Kroah-Hartman]
+bf40801a018b  inet: frags: fix ip6frag_low_thresh boundary  [Greg Kroah-Hartman]
+826ff7991466  inet: frags: get rid of ipfrag_skb_cb/FRAG_CB  [Greg Kroah-Hartman]
+29ff723c5499  inet: frags: reorganize struct netns_frags  [Greg Kroah-Hartman]
+33990010ea40  rhashtable: reorganize struct rhashtable layout  [Greg Kroah-Hartman]
+bf8187348f26  ipv6: frags: rewrite ip6_expire_frag_queue()  [Greg Kroah-Hartman]
+f925a29652a0  inet: frags: do not clone skb in ip_expire()  [Greg Kroah-Hartman]
+567ef0554b91  inet: frags: break the 2GB limit for frags storage  [Greg Kroah-Hartman]
+50fc08963b0c  inet: frags: remove inet_frag_maybe_warn_overflow()  [Greg Kroah-Hartman]
+b047c796dedc  inet: frags: get rif of inet_frag_evicting()  [Greg Kroah-Hartman]
+cf2b9e68a684  inet: frags: remove some helpers  [Greg Kroah-Hartman]
+f67b17c0233a  ipfrag: really prevent allocation on netns exit  [Greg Kroah-Hartman]
+24641fb6453c  net: ieee802154: 6lowpan: fix frag reassembly  [Greg Kroah-Hartman]
+493107105843  inet: frags: use rhashtables for reassembly units  [Greg Kroah-Hartman]
+bf5ea30ff5a1  rhashtable: add schedule points  [Greg Kroah-Hartman]
+9e5f4d0b79f8  rhashtable: Add rhashtable_lookup()  [Greg Kroah-Hartman]
+8295999786a5  rhashtable: add rhashtable_lookup_get_insert_key()  [Greg Kroah-Hartman]
+a7fb573c1644  inet: frags: refactor lowpan_net_frag_init()  [Greg Kroah-Hartman]
+705e71ed9901  inet: frags: refactor ipv6_frag_init()  [Greg Kroah-Hartman]
+8c639cad891c  inet: frags: refactor ipfrag_init()  [Greg Kroah-Hartman]
+9c6727de82e4  inet: frags: add a pointer to struct netns_frags  [Greg Kroah-Hartman]
+5eb2471ef43e  inet: frags: change inet_frags_init_net() return value  [Greg Kroah-Hartman]
+25cbc91e6e05  Revert "qcacld-3.0: Add bound check for fixed_param->total_num_tx_power_levels"  [GuaiYiHu]
+83b10b99d8ce  Merge tag 'LA.UM.7.2.r1-05900-sdm660.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.4 into mkp  [GuaiYiHu]
+a744efb8926c  Merge tag '8438014d5ac3f0d1e960517d4de8b56b062963b9' into mkp  [GuaiYiHu]
+59ff733aae94  Merge tag '50cbd0fcbad02dc8e31529066c4608fd6a143cf7' into mkp  [GuaiYiHu]
+ba0299978cf7  Merge tag 'LA.UM.7.2.r1-05900-sdm660.0' into kernel.lnx.4.4.r34-rel  [Nathan Chancellor]
+   * manifest/
+b466092  Track custom clang repo  [Shubham Singh]
+9ad4ab2  Merge tag 'android-9.0.0_r31' into HEAD  [Shubham Singh]
+   * packages/apps/Contacts/
+7042e3284  Merge tag 'android-9.0.0_r31' into HEAD  [Shubham Singh]
+   * packages/apps/DeskClock/
+f8b9f249d  Merge tag 'android-9.0.0_r31' into HEAD  [Shubham Singh]
+   * packages/apps/DocumentsUI/
+096ddc4f  Merge tag 'android-9.0.0_r31' into HEAD  [Shubham Singh]
+   * packages/apps/Launcher3/
+6d4c4b56f  Merge tag 'android-9.0.0_r31' into HEAD  [Shubham Singh]
+   * packages/apps/PackageInstaller/
+47db8f15  Merge tag 'android-9.0.0_r31' into HEAD  [Shubham Singh]
+   * packages/apps/Settings/
+919c296483  Merge tag 'android-9.0.0_r31' into HEAD  [Shubham Singh]
+   * packages/apps/Stk/
+b3ac145  Merge tag 'android-9.0.0_r31' into HEAD  [Shubham Singh]
+   * packages/inputmethods/LatinIME/
+fae295a1b  Merge tag 'android-9.0.0_r31' into HEAD  [Shubham Singh]
+   * packages/providers/DownloadProvider/
+74fe768  Merge tag 'android-9.0.0_r31' into HEAD  [Shubham Singh]
+   * packages/providers/MediaProvider/
+f520385  Merge tag 'android-9.0.0_r31' into HEAD  [Shubham Singh]
+   * packages/services/Telecomm/
+18678acf  Merge tag 'android-9.0.0_r31' into HEAD  [Shubham Singh]
+   * packages/services/Telephony/
+5dcc106a1  Merge tag 'android-9.0.0_r31' into HEAD  [Shubham Singh]
+   * system/bt/
+8812749f7  Merge tag 'android-9.0.0_r31' into HEAD  [Shubham Singh]
+   * system/core/
+074dc7927  Merge tag 'android-9.0.0_r31' into HEAD  [Shubham Singh]
+   * system/extras/
+33fc1ced  Merge tag 'android-9.0.0_r31' into HEAD  [Shubham Singh]
+   * system/netd/
+6a6fa1e  Merge tag 'android-9.0.0_r31' into HEAD  [Shubham Singh]
+   * system/sepolicy/
+45f79030  Merge tag 'android-9.0.0_r31' into HEAD  [Shubham Singh]
+   * system/vold/
+ac1b4ab  Merge tag 'android-9.0.0_r31' into HEAD  [Shubham Singh]
+
+====================
+     02-07-2019
+====================
+
+   * device/xiaomi/sdm660-common/
+240319a  sdm660: KCal: Add valueinput by keyboard  [Stylogey]
+   * external/skia/
+afc6528ade  Merge tag 'android-9.0.0_r31' into lineage-16.0-android-9.0.0_r31  [Luca Stefani]
+   * hardware/nxp/nfc/
+ec3b549  Merge tag 'android-9.0.0_r31' into lineage-16.0-android-9.0.0_r31  [Luca Stefani]
+   * hardware/qcom/audio/default/
+805056830  Merge tag 'android-9.0.0_r31' into lineage-16.0-android-9.0.0_r31  [Luca Stefani]
+   * hardware/qcom/bootctrl/
+a1d491d  Merge tag 'android-9.0.0_r31' into lineage-16.0-android-9.0.0_r31  [Luca Stefani]
+   * hardware/qcom/gps/
+5dc7ab4  Merge tag 'android-9.0.0_r31' into lineage-16.0-android-9.0.0_r31  [Luca Stefani]
+   * hardware/qcom/media/
+a316b4cb8  Merge tag 'android-9.0.0_r31' into lineage-16.0-android-9.0.0_r31  [Luca Stefani]
+   * hardware/qcom/sdm845/gps/
+236e6c3  Merge tag 'android-9.0.0_r31' into lineage-16.0-android-9.0.0_r31  [Luca Stefani]
+   * hardware/ril/
+8f3b236  Merge tag 'android-9.0.0_r31' into lineage-16.0-android-9.0.0_r31  [Luca Stefani]
+   * kernel/xiaomi/sdm660/
+91c5340861ac  Merge 4.4.173 into kernel.lnx.4.4.r34-rel  [Nathan Chancellor]
+343f981c7608  Linux 4.4.173  [Greg Kroah-Hartman]
+16925957b829  fs: don't scan the inode cache before SB_BORN is set  [Greg Kroah-Hartman]
+57d813863143  mm: migrate: don't rely on __PageMovable() of newpage after unlocking it  [Greg Kroah-Hartman]
+a51bbfef6d1e  drivers: core: Remove glue dirs from sysfs earlier  [Greg Kroah-Hartman]
+8f51e79ceeb4  cifs: Always resolve hostname before reconnecting  [Greg Kroah-Hartman]
+c3ef8a44e758  mm, oom: fix use-after-free in oom_kill_process  [Greg Kroah-Hartman]
+e790eeabc47c  kernel/exit.c: release ptraced tasks before zap_pid_ns_processes  [Greg Kroah-Hartman]
+3027ecc10068  mmc: sdhci-iproc: handle mmc_of_parse() errors during probe  [Greg Kroah-Hartman]
+86a395c27a5d  platform/x86: asus-nb-wmi: Drop mapping of 0x33 and 0x34 scan codes  [Greg Kroah-Hartman]
+5d0868d87292  platform/x86: asus-nb-wmi: Map 0x35 to KEY_SCREENLOCK  [Greg Kroah-Hartman]
+970e5c267cf0  gfs2: Revert "Fix loop in gfs2_rbm_find"  [Greg Kroah-Hartman]
+7685bb0efb0c  arm64: hyp-stub: Forbid kprobing of the hyp-stub  [Greg Kroah-Hartman]
+1472585f511f  ARM: cns3xxx: Fix writing to wrong PCI config registers after alignment  [Greg Kroah-Hartman]
+e31a6a9d27cd  fs/dcache: Fix incorrect nr_dentry_unused accounting in shrink_dcache_sb()  [Greg Kroah-Hartman]
+600c4bd14dc7  CIFS: Do not count -ENODATA as failure for query directory  [Greg Kroah-Hartman]
+245426dc30af  l2tp: fix reading optional fields of L2TPv3  [Greg Kroah-Hartman]
+f5f5d316fa29  l2tp: remove l2specific_len dependency in l2tp_core  [Greg Kroah-Hartman]
+3154a8ad0541  ucc_geth: Reset BQL queue when stopping device  [Greg Kroah-Hartman]
+8034f3610b78  net/rose: fix NULL ax25_cb kernel panic  [Greg Kroah-Hartman]
+ce29e8a259de  netrom: switch to sock timer API  [Greg Kroah-Hartman]
+265f211a29ca  net/mlx4_core: Add masking for a few queries on HCA caps  [Greg Kroah-Hartman]
+a0d1b4af6e9a  l2tp: copy 4 more bytes to linear part if necessary  [Greg Kroah-Hartman]
+f9b9a8ea4796  ipv6: Consider sk_bound_dev_if when binding a socket to an address  [Greg Kroah-Hartman]
+fb0c3321e03f  fs: add the fsnotify call to vfs_iter_write  [Greg Kroah-Hartman]
+dda201759ece  s390/smp: Fix calling smp_call_ipl_cpu() from ipl CPU  [Greg Kroah-Hartman]
+e1e584bb5454  Revert "loop: Fold __loop_release into loop_release"  [Greg Kroah-Hartman]
+f1f952b30534  Revert "loop: Get rid of loop_index_mutex"  [Greg Kroah-Hartman]
+55bbe71559ac  Revert "loop: Fix double mutex_unlock(&loop_ctl_mutex) in loop_control_ioctl()"  [Greg Kroah-Hartman]
+896354cce386  f2fs: read page index before freeing  [Greg Kroah-Hartman]
+029b5be50938  arm64: mm: remove page_mapping check in __sync_icache_dcache  [Greg Kroah-Hartman]
+1b284d784624  irqchip/gic-v3-its: Align PCI Multi-MSI allocation on their size  [Greg Kroah-Hartman]
+2cbf0a6c9a62  perf unwind: Take pgoff into account when reporting elf to libdwfl  [Greg Kroah-Hartman]
+38155e1044c8  perf unwind: Unwind with libdw doesn't take symfs into account  [Greg Kroah-Hartman]
+6a923fc6fe1e  vt: invoke notifier on screen size change  [Greg Kroah-Hartman]
+8781bfdf733e  can: bcm: check timer values before ktime conversion  [Greg Kroah-Hartman]
+17cb93920405  can: dev: __can_get_echo_skb(): fix bogous check for non-existing skb by removing it  [Greg Kroah-Hartman]
+5efadf3b3e7f  x86/kaslr: Fix incorrect i8254 outb() parameters  [Greg Kroah-Hartman]
+43473a6f6734  KVM: x86: Fix single-step debugging  [Greg Kroah-Hartman]
+74d609f091fe  Input: xpad - add support for SteelSeries Stratus Duo  [Greg Kroah-Hartman]
+278541ac0534  CIFS: Fix possible hang during async MTU reads and writes  [Greg Kroah-Hartman]
+8db4fe27f2a6  tty/n_hdlc: fix __might_sleep warning  [Greg Kroah-Hartman]
+fe881381874a  tty: Handle problem if line discipline does not have receive_buf  [Greg Kroah-Hartman]
+b6a23bda233a  staging: rtl8188eu: Add device code for D-Link DWA-121 rev B1  [Greg Kroah-Hartman]
+29f7c747a57e  char/mwave: fix potential Spectre v1 vulnerability  [Greg Kroah-Hartman]
+86dd006cffec  s390/smp: fix CPU hotplug deadlock with CPU rescan  [Greg Kroah-Hartman]
+74be2fcda651  s390/early: improve machine detection  [Greg Kroah-Hartman]
+c25a126d1a65  ARC: perf: map generic branches to correct hardware condition  [Greg Kroah-Hartman]
+d9084840d00a  ASoC: atom: fix a missing check of snd_pcm_lib_malloc_pages  [Greg Kroah-Hartman]
+437f0e444ddf  USB: serial: pl2303: add new PID to support PL2303TB  [Greg Kroah-Hartman]
+1d8dfede3f71  USB: serial: simple: add Motorola Tetra TPG2200 device id  [Greg Kroah-Hartman]
+e98f787a9975  net: bridge: Fix ethernet header pointer before check skb forwardable  [Greg Kroah-Hartman]
+749cbfc0ad60  net_sched: refetch skb protocol for each filter  [Greg Kroah-Hartman]
+289992eb6c1a  net: ipv4: Fix memory leak in network namespace dismantle  [Greg Kroah-Hartman]
+e5c13a9c75ea  openvswitch: Avoid OOB read when parsing flow nlattrs  [Greg Kroah-Hartman]
+52a30a6e141a  net: Fix usage of pskb_trim_rcsum  [Greg Kroah-Hartman]
+   * packages/apps/Nfc/
+9219cd79  Merge tag 'android-9.0.0_r31' into lineage-16.0-android-9.0.0_r31  [Luca Stefani]
+   * system/security/
+b952db0  Merge tag 'android-9.0.0_r31' into lineage-16.0-android-9.0.0_r31  [Luca Stefani]
+   * system/update_engine/
+8d95962  Merge tag 'android-9.0.0_r31' into lineage-16.0-android-9.0.0_r31  [Luca Stefani]
+
+====================
+     02-06-2019
+====================
+
+   * device/xiaomi/sdm660-common/
+3f6e312  sdm660: KCal: Add Presets * Checked out from https://github.com/sayan7848/android_device_xiaomi_msm8953-common/commit/8733afd40882b9db424317376cca648f144116d8  [Max Weffers]
+a243276  sdm660: KCal: Introduce presets  [Max Weffers]
+2f0102a  sdm660: overlay: Show HD VoLTE Icon  [Max Weffers]
+d96c7f5  Revert "sdm660: remove swipe gestures its handled in xiaomi parts now"  [Max Weffers]
+aba8706  sdm660: Move Build Fingerprint to sdm660-common  [Max Weffers]
+a5f02e3  sdm660: enable usb debugging at boot  [Max Weffers]
+   * kernel/xiaomi/sdm660/
+87fd25be1d17  Merge commit '4f65bdd3013497db667c1950b43ac8e4d1da2f78' into mkp  [GuaiYiHu]
+ba315990b467  add toggle for disabling newly added USB devices  [GuaiYiHu]
+32d02768b869  sched: hmp: Reduce number of load reports in a window  [GuaiYiHu]
+8825ad6fbe3f  sched: cpufreq: HMP load reporting changes  [GuaiYiHu]
+2e92939586ed  core_ctl: Consider high irq loaded CPU as busy  [GuaiYiHu]
+704d29ed6a7e  PM / devfreq: memlat: Don't ignore extremely latency sensitive workloads  [GuaiYiHu]
+d7344963a259  Revert "msm: kgsl: Do not memset pages to zero while adding to pool"  [GuaiYiHu]
+0812e68cf1e3  mfd: wcd9xxx: disable slimbus register access for debugfs  [GuaiYiHu]
+a21361cd029c  msm_cci: fix inconsistent mutex_lock  [GuaiYiHu]
+d3d2e657586a  msm: memshare: relaese mutex if req client id is not found  [GuaiYiHu]
+8cbe1c9ef2dc  thermal: qpnp-adc-tm: release lock upon disable_chan_meas failure  [GuaiYiHu]
+9378a51fad98  qcom: qmi: release mutex upon qmi_svc_event_notifier_register error  [GuaiYiHu]
+c8c647bd1be9  i2c-msm-v2: allow i2c_adapter to retry on arbitration lost  [GuaiYiHu]
+a4ed6015b125  msm_thermal: initialize later than arch drivers  [GuaiYiHu]
+e456d8503651  Revert "serial: msm_serial_hs: Protect spurious irqs after wakeup irq enablement"  [GuaiYiHu]
+92f83fd7f2b7  pinctrl: qcom: Add irq_enable callback for msm gpio  [GuaiYiHu]
+7884c54440c1  msm: kgsl: Stop slab shrinker when no more pages can be reclaimed  [GuaiYiHu]
+4dac84cadbab  Revert "f_fs: set maxburst to one before enabling endpoints"  [GuaiYiHu]
+08df6f4d7230  dwc3: resize txfifo of IN/INT endpoint before enabling it  [GuaiYiHu]
+3be340e6c9e8  Revert "USB: set hub's default autosuspend delay as 0"  [GuaiYiHu]
+60b4352f2d87  Revert "usb: hub: Prevent hub autosuspend if usbcore.autosuspend is -1"  [GuaiYiHu]
+4723e5ec7f1a  BACKPORT: usb: host: plat: Enable xHCI plat runtime PM  [GuaiYiHu]
+e6841713adc2  ASoC: msm: q6dspv2: vote for Glink Rx thread priority upgrade  [GuaiYiHu]
+fa53ee8887be  soc: q6dspv2: add api to vote for upgrading thread priority  [GuaiYiHu]
+   * prebuilts/clang/host/linux-x86/
+d6d7321  Update prebuilt Clang to r349610.  [Henrique Pereira]
+
+====================
+     02-05-2019
+====================
+
+   * device/xiaomi/sdm660-common/
+ec842d0  sdm660: Support Alipay fingerprint payment  [Max Weffers]
+4f395e4  sdm660: Update GPS configs from Mi8 Lite  [Max Weffers]
+5b03ec4  sdm660: XiaomiParts: Add Dirac - Add Dirac(Sound Enhancer) - Clean up  [Stylogey]
+   * frameworks/base/
+ff716f39619  lockscreen : differentiate hour from minutes in digital bold style clock  [Shubham Singh]
+9c628581019  Utils: Introduce method to determine countries that use Fahrenheit  [Shubham Singh]
+3d4de1a2746  Utils: Add method to determine battery temp  [Shubham Singh]
+18dabb9cca6  Carrier Label: Bring back the scroll (marquee) effect  [Shubham Singh]
+2e01d2c69dd  InputMethodManager: Fixed memory leak when windowDismissed  [Shubham Singh]
+7342d053ee7  Refusing to enter PIP mode when activity destroyed  [Shubham Singh]
+7bb39a881f3  SystemUI: Fixes context for tiles without longClick  [Shubham Singh]
+bd933808aed  am: Fix top activity resume with secure keyguard  [Shubham Singh]
+4e42667f346  Fix intermittent slowness in resolver activity towards end of day  [Shubham Singh]
+ff154af03b7  WindowManager: Remove unused calling for better performance  [Shubham Singh]
+d30e5b51a25  Fix the behavior of keyguard bouncer in a corner case  [Shubham Singh]
+4e01e2ed22a  Fix disappearing home/recents button  [Shubham Singh]
+be763321d48  DefaultPermissionGrantPolicy: grant Google sounds picker storage perms  [Shubham Singh]
+5585647c84f  Dark theme: Fix notification channel info text color  [Shubham Singh]
+fcfeb427235  Ambient music Now Playing: more improvements  [Shubham Singh]
+09da242ca46  Lockscreen analog clock: improve minute hands looking  [Shubham Singh]
+3db07c09713  Auto switch to a dark analog clock when using dark system theme  [Shubham Singh]
+   * manifest/
+a98125d  Manifest for Android 9.0.0 Release 31 (PQ2A.190205.001)  [The Android Open Source Project]
+   * packages/resources/devicesettings/
+4f04813  Add strings for Ambient Display always on mode  [Shubham Singh]
+   * system/sepolicy/
+5cebc9da  Suppress spurious denial  [Shubham Singh]
+   * vendor/aosp/
+7d31375  vendor: Theme custom analog clock  [Shubham Singh]
+
+====================
+     02-04-2019
+====================
+
+   * device/xiaomi/sdm660-common/
+9d55b42  sdm660: fix typo in init.spectrum.rc file  [GitHub]
+   * frameworks/base/
+6598c6f35ba  Always use standard small clock when pulsing on new notifications  [Shubham Singh]
+681a249a88a  Lockscreen clock styles: Fix bottom margins & ambient display/AOD visibility  [Shubham Singh]
+2ae733e1ce5  Lockscreen items/clocks: KeyguardSliceView improvements/cleanup  [Shubham Singh]
+88c9bb43ad4  Lockscreen clock styles: Move everything to the keyguard [1/2]  [Shubham Singh]
+9ced902bb0b  Lockscreen/ambient analog clock: improve design  [Shubham Singh]
+f6bbd5edba6  Ensure the clockview is aligned correctly each time  [Shubham Singh]
+0a15a3c68d8  Remove the 0 from the 12 hour format from the 'Digital (bold)' option  [Shubham Singh]
+381e99e0893  Keyguard items: code improvements  [Shubham Singh]
+ea625e7bf72  Introduce lockscreen clock/date styles [1/2]  [Shubham Singh]
+8c68d0317b9  Always keep clock/date & other items visible while dozing  [Shubham Singh]
+2bf337a9db3  Hide lockscreen items [1/2]  [Shubham Singh]
+   * hardware/qcom/audio-caf/msm8996/
+d2dfc74a1  hal: spkr_protection: compilation error fixes with the vndk  [Davide Garberi]
+   * hardware/qcom/media-caf/msm8952/
+c108ce3f7  mm-video-v4l2: C++11 requires a space between literal and string macro  [Vladimir Oltean]
+b9af12c5d  mm-video-v4l2: Compilation warning fixes  [Vladimir Oltean]
+44b85bb31  libstagefrighthw: Compilation warning fixes  [Vladimir Oltean]
+8d7910226  libc2dcolorconvert: Compilation warning fixes  [Vladimir Oltean]
+   * packages/apps/Extensions/
+5e418867  CustomSeekBarPreference: Align with other preferences  [Shubham Singh]
+2e3198d8  Introduce lockscreen clock/date styles [2/2]  [Shubham Singh]
+18ac7b47  Hide lockscreen items [2/2]  [Shubham Singh]
+   * packages/apps/Settings/
+974c31dfff  Battery temp: Use MCC to determine the scale type  [Shubham Singh]
+ac81a33a20  Themes: Convert sync icons to vector so they theme correctly  [Shubham Singh]
+2775b4b5ff  Themes: make sure settings shortcut icons follow system accent  [Shubham Singh]
+777c115df8  Battery temp: Ensure preference is updated  [Shubham Singh]
+ec711459f9  Power detail pages: Finish off the rest of the icon tinting  [Shubham Singh]
+797549dc79  Settings: fix icon tinting in power detail pages  [Shubham Singh]
+cea8c79d22  Battery stats: Display battery temperature  [Shubham Singh]
+
+====================
+     02-03-2019
+====================
+
+   * manifest/
+2527fcd  Track lineage version of data-ipa-cfg-mgr * since 6228c02 we are tracking CAF variant which conflicts with stock data-ipa-cfg-mgr, lineage guards it to just get included on non-caf builds  [arian]
+
