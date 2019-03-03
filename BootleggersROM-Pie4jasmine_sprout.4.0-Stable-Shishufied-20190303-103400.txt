@@ -1,0 +1,138 @@
+====================
+     03-03-2019
+====================
+
+   * device/xiaomi/jasmine_sprout/
+bf9f381  Merge remote-tracking branch 'upstream/havoc' into HEAD  [Fullbustah]
+   * vendor/bootleggers/
+08a72679  vendor: set our own date prop  [ElDainosor]
+
+====================
+     03-02-2019
+====================
+
+   * frameworks/base/
+0423bc7592b  Unbreak ambient display while Heads up is disabled  [ElDainosor]
+   * hardware/qcom/fm/
+1b4078d  Merge tag 'LA.UM.7.3.r1-06900-sdm845.0' into HEAD  [Bruno Martins]
+
+====================
+     02-28-2019
+====================
+
+   * build/make/
+2f400e3d5  Revert dumb additions  [ElDainosor]
+   * vendor/bootleggers/
+d9cbf680  vendor: Update lawnchair apk  [ElDainosor]
+544524f7  vendor: Let's add gboard go  [ElDainosor]
+37e5e792  vendor: add build size on build message  [ElDainosor]
+
+====================
+     02-27-2019
+====================
+
+   * device/xiaomi/sdm660-common/
+7b4e5e8  sdm660: Add korean translation for Xiaomi Parts and kCal Settings  [Max Weffers]
+   * hardware/qcom/bt-caf/
+e5da643  Merge tag 'LA.UM.7.3.r1-06900-sdm845.0' into HEAD  [Bruno Martins]
+   * hardware/qcom/fm/
+f44384a  Automatic translation import  [Michael Bestas]
+   * hardware/qcom/media-caf/msm8998/
+125f38c75  Fix invalid logical constant creation.  [Michael Bestas]
+   * hardware/qcom/wlan-caf/
+0a614e2  Merge tag 'LA.UM.7.3.r1-06900-sdm845.0' into HEAD  [Bruno Martins]
+   * vendor/qcom/opensource/data-ipa-cfg-mgr/
+4f0ea34  Merge tag 'LA.UM.7.3.r1-06900-sdm845.0' into HEAD  [Bruno Martins]
+   * vendor/qcom/opensource/dataservices/
+c2c0364  Merge tag 'LA.UM.7.3.r1-06900-sdm845.0' into HEAD  [Bruno Martins]
+   * vendor/qcom/opensource/interfaces/
+bd2b995  interfaces: Regen blueprints  [Bruno Martins]
+aa6b069  Merge tag 'LA.UM.7.3.r1-06900-sdm845.0' into HEAD  [Bruno Martins]
+   * vendor/xiaomi/MiuiCamera/
+103a72b  camera: update miui camera to wayne miui 10 camera with ai  [Max Weffers]
+
+====================
+     02-26-2019
+====================
+
+   * build/make/
+6eeb7248f  Add raise_error param on GetBuildProp method  [ElDainosor]
+fd5ba1368  Add hardware & software information to flash script Based on this commit : AICP/build@51eb7dd  [ElDainosor]
+165f42597  envsetup: stop jack server once build completed  [ElDainosor]
+a4f480637  dex2oat: disable multithreading for WSL  [ElDainosor]
+4939d59ae  Add detection for WSL  [ElDainosor]
+   * device/xiaomi/jasmine_sprout/
+d798680  jasmine_sprout: delete wrong config for noise cancelation  [Max Weffers]
+   * device/xiaomi/sdm660-common/
+efd9044  sdm660: split camera props for hal1 and aux  [Max Weffers]
+   * kernel/xiaomi/sdm660/
+a02445dba074  Merge branch 'android-4.4' of https://android.googlesource.com/kernel/msm into redo  [Max Weffers]
+7c62143fd0da  Merge branch 'kernel.lnx.4.4.r34-rel' of https://github.com/android-linux-stable/msm-4.4 into redo  [Max Weffers]
+   * manifest/
+b6d4135  manifest: Add CAF variant of data-ipa-cfg-mgr  [merothh]
+   * vendor/xiaomi/jasmine_sprout/
+aa31e4b  jasmine_sprout: Add missing camera files for fully working miui camera  [Max Weffers]
+
+====================
+     02-25-2019
+====================
+
+   * device/xiaomi/jasmine_sprout/
+1ef9e74  Jasmine: Bootleg bringup  [Fullbustah]
+   * external/exfat/
+5e45863  Android: remove "tags" from Android.bp.  [LuK1337]
+   * frameworks/base/
+c6975a20990  Automatic translation import  [ElDainosor]
+18a5ba3ee04  Fix NFC tile for Pie  [ElDainosor]
+   * hardware/qcom/media-caf/msm8996/
+406a31fc9  Fix invalid logical constant creation.  [Michael Bestas]
+   * packages/apps/BootlegDumpster/
+000f714  Automatic translation import  [ElDainosor]
+   * packages/apps/Launcher3/
+ea299e069  Automatic translation import  [ElDainosor]
+   * packages/apps/Settings/
+a91394bd21  Automatic translation import  [ElDainosor]
+   * vendor/bootleggers/
+002b16e9  vendor: qcom: Set proper CAF data-ipa-cfg-mgr pathmap  [merothh]
+16096b5a  vendor: qcom: Set data-ipa-cfg-mgr pathmap  [merothh]
+
+====================
+     02-24-2019
+====================
+
+   * kernel/xiaomi/sdm660/
+d184336fd019  Merge 4.4.176 into kernel.lnx.4.4.r34-rel  [Nathan Chancellor]
+
+====================
+     02-23-2019
+====================
+
+   * kernel/xiaomi/sdm660/
+af13f43f01a3  Linux 4.4.176  [Greg Kroah-Hartman]
+49e1a9d1169a  KVM: VMX: Fix x2apic check in vmx_msr_bitmap_mode()  [Greg Kroah-Hartman]
+94801fd5ab23  ax25: fix possible use-after-free  [Greg Kroah-Hartman]
+c532eb1d4527  mISDN: fix a race in dev_expire_timer()  [Greg Kroah-Hartman]
+82379cf03bee  net/x25: do not hold the cpu too long in x25_new_lci()  [Greg Kroah-Hartman]
+c78c9f52afe5  mfd: as3722: Mark PM functions as __maybe_unused  [Greg Kroah-Hartman]
+e7dff89d7713  mfd: as3722: Handle interrupts on suspend  [Greg Kroah-Hartman]
+bc4db52485cc  kvm: fix kvm_ioctl_create_device() reference counting (CVE-2019-6974)  [Greg Kroah-Hartman]
+f5aebe74113f  x86: livepatch: Treat R_X86_64_PLT32 as R_X86_64_PC32  [Greg Kroah-Hartman]
+01fb36063d97  net: ipv4: use a dedicated counter for icmp_v4 redirect packets  [Greg Kroah-Hartman]
+3fa6a285279f  net: stmmac: Fix a race in EEE enable callback  [Greg Kroah-Hartman]
+ffed570a85ad  vxlan: test dev->flags & IFF_UP before calling netif_rx()  [Greg Kroah-Hartman]
+a466589807a1  tcp: clear icsk_backoff in tcp_write_queue_purge()  [Greg Kroah-Hartman]
+2e7b872833c7  net: Do not allocate page fragments that are not skb aligned  [Greg Kroah-Hartman]
+122e4a307793  tcp: tcp_v4_err() should be more careful  [Greg Kroah-Hartman]
+817d4a429566  net: Add header for usage of fls64()  [Greg Kroah-Hartman]
+7fecacc0d5ff  sky2: Increase D3 delay again  [Greg Kroah-Hartman]
+1815d11b544a  net: Fix for_each_netdev_feature on Big endian  [Greg Kroah-Hartman]
+27763b01a4ff  hwmon: (lm80) Fix missing unlock on error in set_fan_div()  [Greg Kroah-Hartman]
+9d6ca4d88e27  vsock: cope with memory allocation failure at socket creation time  [Greg Kroah-Hartman]
+9467d98f6d48  net: fix IPv6 prefix route residue  [Greg Kroah-Hartman]
+
+====================
+     02-22-2019
+====================
+
+   * hardware/qcom/bt-caf/
+a790391  Add compat for old wcnss_filter  [Corinna Vinschen]
