@@ -1,0 +1,273 @@
+====================
+     03-08-2019
+====================
+
+   * bionic/
+ceec1fe66  Merge tag 'android-9.0.0_r34' into HEAD  [Shubham Singh]
+   * build/make/
+50f9c1cab  Merge tag 'android-9.0.0_r34' into HEAD  [Shubham Singh]
+   * device/lenovo/kuntao/
+26a59261  Revert "kuntao: Prevent permission denied error for telephony"  [Fullbustah]
+8f9950a7  Revert "kuntao: sepolicy: Define sensors_data_file locally"  [Fullbustah]
+   * frameworks/av/
+80ba5b8c3  Merge tag 'android-9.0.0_r34' into HEAD  [Shubham Singh]
+   * frameworks/base/
+281206795f3  Merge tag 'android-9.0.0_r34' into HEAD  [Shubham Singh]
+   * frameworks/native/
+d0d5d8f2d  Merge tag 'android-9.0.0_r34' into HEAD  [Shubham Singh]
+   * hardware/nxp/nfc/
+81275d3  Merge tag 'android-9.0.0_r34' into lineage-16.0-android-9.0.0_r34  [Luca Stefani]
+   * manifest/
+89fd73b  Merge tag 'android-9.0.0_r34' into HEAD  [Shubham Singh]
+   * packages/apps/PackageInstaller/
+38289e64  Merge tag 'android-9.0.0_r34' into HEAD  [Shubham Singh]
+   * system/bt/
+003824a0b  Merge tag 'android-9.0.0_r34' into HEAD  [Shubham Singh]
+   * system/core/
+8da3f9497  Merge tag 'android-9.0.0_r34' into HEAD  [Shubham Singh]
+
+====================
+     03-07-2019
+====================
+
+   * device/xiaomi/sdm660-common/
+49fda4c  update: zh and zh-cn for MiParts (part 2)  [Max Weffers]
+1f1e23b  update: zh and zh-cn for MiParts  [Max Weffers]
+
+====================
+     03-06-2019
+====================
+
+   * device/xiaomi/jasmine_sprout/
+f444be4  jasmine_sprout: copy codec to media_codecs_vendor too  [Max Weffers]
+6e6781e  jasmine_sprout: Update Camera props based on pie release  [Max Weffers]
+   * device/xiaomi/sdm660-common/
+85844a8  sdm660: Access mlipay hal via a binder service  [Max Weffers]
+933d7d8  sdm660: Add Thermal Controller App  [Max Weffers]
+30ca9a0  sdm660: Enable workaround for old MCC/MNC format  [Max Weffers]
+082e9f5  sdm660: bluetooth: Decrease MAX_L2CAP_CHANNELS  [Max Weffers]
+b1794ea  sdm660: Add mi pad 4 plus name for bt devices  [Max Weffers]
+7ca7a36  sdm660: force some more apps to camera hal1  [Max Weffers]
+5741e27  sdm660: Set OpenGL Skia as default renderer  [Max Weffers]
+00ce546  sdm660: Add spanish translation for Xiaomi Parts  [Max Weffers]
+5900444  sdm660: Add korean translation for Xiaomi Parts and kCal Settings  [Max Weffers]
+0aaeecf  sdm660: audio: change path to point to /data/vendor/audio  [Max Weffers]
+7bb4cea  sdm660: rootdir: Re-enable port-bridge service  [Max Weffers]
+   * kernel/xiaomi/sdm660/
+fb3a7736c3a8  Merge branch 'linux-4.4.y' of https://git.kernel.org/pub/scm/linux/kernel/git/jaegeuk/f2fs-stable into redo  [Max Weffers]
+056da3804195  f2fs: fix rapid GC breakage from merge 4e87f7d2befb8  [Max Weffers]
+ff3a55fe589b  f2fs/rapid_gc: do not wait until all invalid blocks are discarded  [Max Weffers]
+e69394d43384  Merge branch 'android-4.4' of https://github.com/aosp-mirror/kernel_common into redo  [Max Weffers]
+6a2d142da581  Merge branch 'linux-4.4.y' of https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable-rc into redo  [Max Weffers]
+fedb96021a50  LA.UM.7.2.r1-06500-sdm660.0  [Max Weffers]
+ddff184c02fb  Merge tag 'LA.UM.7.2.r1-06500-sdm660.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn into redo  [Max Weffers]
+667d076c2b0c  Merge tag 'LA.UM.7.2.r1-06500-sdm660.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/fw-api into redo  [Max Weffers]
+698cd9410ffe  Merge tag 'LA.UM.7.2.r1-06500-sdm660.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0 into redo "LA.UM.7.2.r1-06500-sdm660.0"  [Max Weffers]
+c68e1228c2b4  Merge tag 'LA.UM.7.2.r1-06500-sdm660.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.4 into redo "LA.UM.7.2.r1-06500-sdm660.0"  [Max Weffers]
+f44df02cd202  ANDROID: overlayfs: override_creds=off option bypass creator_cred  [Mark Salyzyn]
+
+====================
+     03-05-2019
+====================
+
+   * kernel/xiaomi/sdm660/
+0272cd402b73  FROMGIT: binder: create node flag to request sender's security context  [Todd Kjos]
+   * manifest/
+00963bf  Manifest for Android 9.0.0 Release 34 (PQ2A.190305.002)  [The Android Open Source Project]
+
+====================
+     03-04-2019
+====================
+
+   * kernel/xiaomi/sdm660/
+4bb62a3aba94  Linux 4.4.177-rc1  [Greg Kroah-Hartman]
+d6fea63b029e  x86/uaccess: Don't leak the AC flag into __put_user() value evaluation  [Greg Kroah-Hartman]
+1e3f81fbd27c  mm: enforce min addr even if capable() in expand_downwards()  [Greg Kroah-Hartman]
+5b985b20a530  mmc: spi: Fix card detection during probe  [Greg Kroah-Hartman]
+f5a7e17dd784  powerpc: Always initialize input array when calling epapr_hypercall()  [Greg Kroah-Hartman]
+d58a63718657  KVM: arm/arm64: Fix MMIO emulation data handling  [Greg Kroah-Hartman]
+e9acd1f5de3a  arm/arm64: KVM: Feed initialized memory to MMIO accesses  [Greg Kroah-Hartman]
+8c2680a9b492  KVM: nSVM: clear events pending from svm_complete_interrupts() when exiting to L1  [Greg Kroah-Hartman]
+9757999e61af  cfg80211: extend range deviation for DMG  [Greg Kroah-Hartman]
+0df4b98381e5  mac80211: don't initiate TDLS connection if station is not associated to AP  [Greg Kroah-Hartman]
+f3a427205c15  ibmveth: Do not process frames after calling napi_reschedule  [Greg Kroah-Hartman]
+2d3a999b57cf  net: altera_tse: fix connect_local_phy error path  [Greg Kroah-Hartman]
+9621f8d3b695  scsi: csiostor: fix NULL pointer dereference in csio_vport_set_state()  [Greg Kroah-Hartman]
+2612be406bb5  serial: fsl_lpuart: fix maximum acceptable baud rate with over-sampling  [Greg Kroah-Hartman]
+309eb988300d  mac80211: fix miscounting of ttl-dropped frames  [Greg Kroah-Hartman]
+642def049371  ARC: fix __ffs return value to avoid build warnings  [Greg Kroah-Hartman]
+e690d5d205d7  ASoC: imx-audmux: change snprintf to scnprintf for possible overflow  [Greg Kroah-Hartman]
+248659650971  ASoC: dapm: change snprintf to scnprintf for possible overflow  [Greg Kroah-Hartman]
+7bdff615117f  usb: gadget: Potential NULL dereference on allocation error  [Greg Kroah-Hartman]
+71109897fdef  usb: dwc3: gadget: Fix the uninitialized link_state when udc starts  [Greg Kroah-Hartman]
+577b23962105  thermal: int340x_thermal: Fix a NULL vs IS_ERR() check  [Greg Kroah-Hartman]
+bbd394010189  ALSA: compress: prevent potential divide by zero bugs  [Greg Kroah-Hartman]
+40c2591ad40c  ASoC: Intel: Haswell/Broadwell: fix setting for .dynamic field  [Greg Kroah-Hartman]
+208559fcc509  drm/msm: Unblock writer if reader closes file  [Greg Kroah-Hartman]
+c2e5110955d9  scsi: libsas: Fix rphy phy_identifier for PHYs with end devices attached  [Greg Kroah-Hartman]
+032546ff26a3  libceph: handle an empty authorize reply  [Greg Kroah-Hartman]
+07d9ceec38f6  Revert "bridge: do not add port to router list when receives query with source 0.0.0.0"  [Greg Kroah-Hartman]
+1f802f9af63c  ARCv2: Enable unaligned access in early ASM code  [Greg Kroah-Hartman]
+2e77cecb1fdb  net/mlx4_en: Force CHECKSUM_NONE for short ethernet frames  [Greg Kroah-Hartman]
+83e90e519fce  sit: check if IPv6 enabled before calling ip6_err_gen_icmpv6_unreach()  [Greg Kroah-Hartman]
+066f0af08c41  team: avoid complex list operations in team_nl_cmd_options_set()  [Greg Kroah-Hartman]
+baaddb8a2a8c  net/packet: fix 4gb buffer limit due to overflow check  [Greg Kroah-Hartman]
+89d2de182927  batman-adv: fix uninit-value in batadv_interface_tx()  [Greg Kroah-Hartman]
+a25b9fc8ee2b  KEYS: always initialize keyring_index_key::desc_len  [Greg Kroah-Hartman]
+b7628327b7fb  KEYS: user: Align the payload buffer  [Greg Kroah-Hartman]
+4ba921a4c8d7  RDMA/srp: Rework SCSI device reset handling  [Greg Kroah-Hartman]
+018848fd8270  isdn: avm: Fix string plus integer warning from Clang  [Greg Kroah-Hartman]
+cf4eb33f1e38  leds: lp5523: fix a missing check of return value of lp55xx_read  [Greg Kroah-Hartman]
+140093b14b6d  atm: he: fix sign-extension overflow on large shift  [Greg Kroah-Hartman]
+5a542907c151  isdn: i4l: isdn_tty: Fix some concurrency double-free bugs  [Greg Kroah-Hartman]
+1cf4687f3c97  MIPS: jazz: fix 64bit build  [Greg Kroah-Hartman]
+6d56f6090868  scsi: isci: initialize shost fully before calling scsi_add_host()  [Greg Kroah-Hartman]
+a3cac13619c6  scsi: qla4xxx: check return code of qla4xxx_copy_from_fwddb_param  [Greg Kroah-Hartman]
+1874468926af  MIPS: ath79: Enable OF serial ports in the default config  [Greg Kroah-Hartman]
+16672fd142c1  net: hns: Fix use after free identified by SLUB debug  [Greg Kroah-Hartman]
+2b434f31e98e  mfd: mc13xxx: Fix a missing check of a register-read failure  [Greg Kroah-Hartman]
+85cfbc0194fe  mfd: wm5110: Add missing ASRC rate register  [Greg Kroah-Hartman]
+2f0de74a70aa  mfd: qcom_rpm: write fw_version to CTRL_REG  [Greg Kroah-Hartman]
+d59121e5c2fc  mfd: ab8500-core: Return zero in get_register_interruptible()  [Greg Kroah-Hartman]
+801cb41188b8  mfd: db8500-prcmu: Fix some section annotations  [Greg Kroah-Hartman]
+fd0d28b0c74b  mfd: twl-core: Fix section annotations on {,un}protect_pm_master  [Greg Kroah-Hartman]
+b9355d1a6023  mfd: ti_am335x_tscadc: Use PLATFORM_DEVID_AUTO while registering mfd cells  [Greg Kroah-Hartman]
+f44ce1f8241e  KEYS: allow reaching the keys quotas exactly  [Greg Kroah-Hartman]
+0d4c9800c025  numa: change get_mempolicy() to use nr_node_ids instead of MAX_NUMNODES  [Greg Kroah-Hartman]
+a9467c88b684  ceph: avoid repeatedly adding inode to mdsc->snap_flush_list  [Greg Kroah-Hartman]
+
+====================
+     03-03-2019
+====================
+
+   * external/bash/
+a40f251  bash: Silence all build warnings  [Michael Bestas]
+   * external/openssh/
+729a9063  openssh: Silence build warnings  [Michael Bestas]
+   * external/rsync/
+4a30b87d  rsync: Silence build warnings  [Michael Bestas]
+   * vendor/nxp/opensource/halimpl/
+fb5cc96  halimpl: Remove useless makefile  [Bruno Martins]
+
+====================
+     03-02-2019
+====================
+
+   * hardware/qcom/fm/
+1b4078d  Merge tag 'LA.UM.7.3.r1-06900-sdm845.0' into HEAD  [Bruno Martins]
+
+====================
+     03-01-2019
+====================
+
+   * hardware/qcom/display/
+250c51746  hwc: msm8084: Remove _vendor from libbfqio  [dianlujitao]
+   * hardware/qcom/display-caf/apq8084/
+5d0f880d7  hwc: Remove _vendor from libbfqio  [dianlujitao]
+   * hardware/qcom/display-caf/msm8916/
+197a40e18  hwc: Remove _vendor from libbfqio  [dianlujitao]
+   * hardware/qcom/display-caf/msm8952/
+f38874231  hwc: Remove _vendor from libbfqio  [dianlujitao]
+   * hardware/qcom/display-caf/msm8974/
+0cc9709b8  hwc: Remove _vendor from libbfqio  [dianlujitao]
+   * hardware/qcom/display-caf/msm8994/
+4523303d9  hwc: Remove _vendor from libbfqio  [dianlujitao]
+   * hardware/qcom/display-caf/msm8996/
+44a0b38f9  hwc: Remove _vendor from libbfqio  [dianlujitao]
+   * hardware/qcom/display-caf/msm8998/
+7489d6c3e  hwc: Remove _vendor from libbfqio  [dianlujitao]
+
+====================
+     02-28-2019
+====================
+
+   * kernel/xiaomi/sdm660/
+12d9d27285a0  Merge 4b04b7261fb3793470dd12f59e4c35c2168c324e on remote branch  [Linux Build Service Account]
+46c4d89ee3ca  Merge d8432efd659005bb160f74e0673f7a2f9e3f2e68 on remote branch  [Linux Build Service Account]
+cceda21f7bd0  Merge d3e47a8bdc2983d66d3b23384c411b33cc388967 on remote branch  [Linux Build Service Account]
+12d823939e80  Merge 7f8a8ced823da42b0cbe15199e6fe6eb3f5ad1d1 on remote branch  [Linux Build Service Account]
+
+====================
+     02-27-2019
+====================
+
+   * hardware/qcom/fm/
+f44384a  Automatic translation import  [Michael Bestas]
+   * hardware/qcom/wlan-caf/
+0a614e2  Merge tag 'LA.UM.7.3.r1-06900-sdm845.0' into HEAD  [Bruno Martins]
+   * packages/apps/Nfc/
+1be41703  Automatic translation import  [Michael Bestas]
+   * vendor/qcom/opensource/data-ipa-cfg-mgr/
+4f0ea34  Merge tag 'LA.UM.7.3.r1-06900-sdm845.0' into HEAD  [Bruno Martins]
+   * vendor/qcom/opensource/dataservices/
+c2c0364  Merge tag 'LA.UM.7.3.r1-06900-sdm845.0' into HEAD  [Bruno Martins]
+   * vendor/qcom/opensource/interfaces/
+bd2b995  interfaces: Regen blueprints  [Bruno Martins]
+aa6b069  Merge tag 'LA.UM.7.3.r1-06900-sdm845.0' into HEAD  [Bruno Martins]
+   * vendor/qcom/opensource/thermal-engine/
+3e8495d  Merge tag 'LA.UM.7.3.r1-06900-sdm845.0' into HEAD  [Bruno Martins]
+
+====================
+     02-26-2019
+====================
+
+   * device/xiaomi/jasmine_sprout/
+d798680  jasmine_sprout: delete wrong config for noise cancelation  [Max Weffers]
+   * external/p7zip/
+b3b6f89  p7zip: Silence all warnings  [Michael Bestas]
+   * external/unrar/
+9b2e2b9  unrar: Silence more build warnings  [Michael Bestas]
+   * external/zip/
+c4117e1  zip: Silence build warnings  [Michael Bestas]
+   * hardware/qcom/media-caf/msm8998/
+125f38c75  Fix invalid logical constant creation.  [Michael Bestas]
+   * kernel/xiaomi/sdm660/
+a02445dba074  Merge branch 'android-4.4' of https://android.googlesource.com/kernel/msm into redo  [Max Weffers]
+
+====================
+     02-25-2019
+====================
+
+   * external/exfat/
+5e45863  Android: remove "tags" from Android.bp.  [LuK1337]
+   * hardware/qcom/media-caf/msm8996/
+406a31fc9  Fix invalid logical constant creation.  [Michael Bestas]
+   * kernel/xiaomi/sdm660/
+7c62143fd0da  Merge branch 'kernel.lnx.4.4.r34-rel' of https://github.com/android-linux-stable/msm-4.4 into redo  [Max Weffers]
+   * vendor/xiaomi/jasmine_sprout/
+aa31e4b  jasmine_sprout: Add missing camera files for fully working miui camera  [Max Weffers]
+
+====================
+     02-24-2019
+====================
+
+
+====================
+     02-23-2019
+====================
+
+   * kernel/xiaomi/sdm660/
+d184336fd019  Merge 4.4.176 into kernel.lnx.4.4.r34-rel  [Nathan Chancellor]
+cf84cdc1d2b5  Merge 4.4.176 into android-4.4  [Greg Kroah-Hartman]
+af13f43f01a3  Linux 4.4.176  [Greg Kroah-Hartman]
+49e1a9d1169a  KVM: VMX: Fix x2apic check in vmx_msr_bitmap_mode()  [Greg Kroah-Hartman]
+94801fd5ab23  ax25: fix possible use-after-free  [Greg Kroah-Hartman]
+c532eb1d4527  mISDN: fix a race in dev_expire_timer()  [Greg Kroah-Hartman]
+82379cf03bee  net/x25: do not hold the cpu too long in x25_new_lci()  [Greg Kroah-Hartman]
+c78c9f52afe5  mfd: as3722: Mark PM functions as __maybe_unused  [Greg Kroah-Hartman]
+e7dff89d7713  mfd: as3722: Handle interrupts on suspend  [Greg Kroah-Hartman]
+bc4db52485cc  kvm: fix kvm_ioctl_create_device() reference counting (CVE-2019-6974)  [Greg Kroah-Hartman]
+f5aebe74113f  x86: livepatch: Treat R_X86_64_PLT32 as R_X86_64_PC32  [Greg Kroah-Hartman]
+01fb36063d97  net: ipv4: use a dedicated counter for icmp_v4 redirect packets  [Greg Kroah-Hartman]
+3fa6a285279f  net: stmmac: Fix a race in EEE enable callback  [Greg Kroah-Hartman]
+ffed570a85ad  vxlan: test dev->flags & IFF_UP before calling netif_rx()  [Greg Kroah-Hartman]
+a466589807a1  tcp: clear icsk_backoff in tcp_write_queue_purge()  [Greg Kroah-Hartman]
+2e7b872833c7  net: Do not allocate page fragments that are not skb aligned  [Greg Kroah-Hartman]
+122e4a307793  tcp: tcp_v4_err() should be more careful  [Greg Kroah-Hartman]
+817d4a429566  net: Add header for usage of fls64()  [Greg Kroah-Hartman]
+7fecacc0d5ff  sky2: Increase D3 delay again  [Greg Kroah-Hartman]
+1815d11b544a  net: Fix for_each_netdev_feature on Big endian  [Greg Kroah-Hartman]
+27763b01a4ff  hwmon: (lm80) Fix missing unlock on error in set_fan_div()  [Greg Kroah-Hartman]
+9d6ca4d88e27  vsock: cope with memory allocation failure at socket creation time  [Greg Kroah-Hartman]
+9467d98f6d48  net: fix IPv6 prefix route residue  [Greg Kroah-Hartman]
+
