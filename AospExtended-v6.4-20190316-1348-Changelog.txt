@@ -1,0 +1,501 @@
+====================
+     03-16-2019
+====================
+
+   * device/xiaomi/jasmine_sprout/
+3f32a57  jasmine_sprout: nosdcard  [Manish4586]
+
+====================
+     03-15-2019
+====================
+
+   * device/xiaomi/sdm660-common/
+4d637e4  sdm660: XiaomiParts: Some improvements, move kcal to xp  [Stylogey]
+2f9335a  sdm660-common:drop ANT+ and FM  [Max Weffers]
+c1affa9  sdm660: Update Build Fingerprint to PQ2A.190305.002  [Max Weffers]
+947a3c7  sdm660: KCal: Some improvements  [Max Weffers]
+ca9fca7  sdm660: XiaomiParts: Remove EIS preference  [Max Weffers]
+   * hardware/qcom/audio/default/
+c009fa9b9  msm8960: Add SND_DEVICE_OUT_VOICE_MUSIC_TX  [Nolen Johnson]
+   * packages/apps/Extensions/
+7d86e9a4  v6.4 [2/2]  [Shubham Singh]
+   * vendor/aosp/
+9838cc9  v6.4 [1/2]  [Shubham Singh]
+
+====================
+     03-14-2019
+====================
+
+   * frameworks/base/
+581155ee3b7  PowerManager: Don't bother devices not using wait for MPCTL  [Shubham Singh]
+1f6089c183e  Automatic translation import  [Shubham Singh]
+aa903286b3d  ex_strings: Allow translate 'Advanced reboot' strings  [ShevT]
+   * hardware/qcom/display-caf/apq8084/
+dfd2336ce  hwc: Handle validateAndSet failures in AD prepare call  [Corinna Vinschen]
+   * packages/apps/DeskClock/
+ada48e94e  Automatic translation import  [Shubham Singh]
+   * packages/apps/Extensions/
+ef76e3b1  Extensions: notifications: s/light LED/LED light  [Shubham Singh]
+92d92e8f  Automatic translation import  [Shubham Singh]
+   * packages/apps/FMRadio/
+8ca6799  Automatic translation import  [Shubham Singh]
+   * packages/apps/Launcher3/
+fc7bf34e4  Automatic translation import  [Shubham Singh]
+   * packages/apps/Messaging/
+7ee9a05  Automatic translation import  [Shubham Singh]
+   * packages/apps/Settings/
+3269cb7e27  Automatic translation import  [Shubham Singh]
+   * packages/apps/SmartNav/
+ee5c394  Automatic translation import  [Shubham Singh]
+   * packages/apps/SmartNavSettings/
+387237f  Automatic translation import  [Shubham Singh]
+   * packages/apps/Updates/
+a50fe9a  Automatic translation import  [Shubham Singh]
+   * packages/providers/DownloadProvider/
+0c0ce91  Automatic translation import  [Shubham Singh]
+   * prebuilts/clang/host/linux-x86/
+b73eb36  Update prebuilt Clang to r353983.  [Arghya Chanda]
+
+====================
+     03-13-2019
+====================
+
+   * bionic/
+a33f7a18a  libc: Optimize ARM memcmp by using NEON.  [Aayush Gupta]
+   * build/make/
+74ced11f2  build: Stop installing the sample APN list  [Aayush Gupta]
+ec7f0bd81  build: Add vendor.prop capability  [Aayush Gupta]
+   * frameworks/av/
+dfe47e0f5  Fixed audioserver crash in monkey test  [AmolAmrit]
+c568dd19e  audioflinger: do not idle thread if active tracks exist  [AmolAmrit]
+395d9e50b  audio: ensure effect chain with specific session id is unique  [AmolAmrit]
+3ce77471b  audioflinger: Throttle output if no active tracks  [AmolAmrit]
+95312d418  audio: don't apply ramp if track is paused before the first mix  [AmolAmrit]
+a71f0fb2c  effects: Initialize volume at -96  [davidevinavil]
+14b34ce87  effects: fix volume burst on pause/resume with AudioFX  [davidevinavil]
+   * frameworks/base/
+2ff115c1636  Revert "QS: Fix opacity after reboot"  [Shubham Singh]
+9311fa85579  PerformanceManager: Allow wait for MPCTL to start on boot  [sb6596]
+de992628544  AudioService: Fix camera shutter sound toggle  [AmolAmrit]
+d250f93dc27  Navbar: Do not fiddle with haptic feedback  [AmolAmrit]
+af17e15c938  Null locale causing the VTS fail.  [AmolAmrit]
+d3de08be893  Fix for CTS testAllowWhileIdleJobInTempwhitelist  [AmolAmrit]
+decb08f48c5  Revert "ViewRoot: Ensure we release surface from setWindowStopped"  [AmolAmrit]
+cdd6829d811  core: view: Add property to disable VSync for CPU rendered apps  [AmolAmrit]
+2633e78550a  SystemUI: Remove unused resources  [AmolAmrit]
+8dc777711b8  Fix RouterAdvertisementDaemon thread leakage problem  [AmolAmrit]
+7feec40dfe8  Return null on failed insert due to permissions  [AmolAmrit]
+89346940ea4  Fix potential crash when per-procstate cpu times tracking is turned on  [AmolAmrit]
+7d270b81237  Unbreak ambient display while Heads up is disabled  [AmolAmrit]
+df4cbc446d0  Ambient: do not extend pulse notification when not needed  [AmolAmrit]
+aee6ad4ec61  Revert "base: QS panel opacity"  [AmolAmrit]
+50ccfaf1e9c  Add ChargingStarted + InCallNotif to AudioPackage  [AmolAmrit]
+70c5e33d756  ServiceRegistry: Don't throw an exception if OEM_LOCK is missing  [AmolAmrit]
+a40cb80060b  Crash app on foreground service notification error  [AmolAmrit]
+01c88ec1733  am: Avoid scheduling service restart twice  [AmolAmrit]
+c68523bd177  Clear all lingering notifications when network is disconnected  [AmolAmrit]
+e36e7f79cf0  Telephony: Add DisconnectCause values for clear code  [AmolAmrit]
+0a05d4a8ecc  SystemUI: Fix flickering issue when live wallpaper is showing on aod/pulsing  [AmolAmrit]
+d1252641403  PhoneWindowManager: Allow torch during ambient display  [AmolAmrit]
+897a94c7842  Optimize AbsListView to reduce click operation latency  [AmolAmrit]
+658e9f2523a  Implement per-app thermal control [2/3]  [Shubham Singh]
+   * hardware/interfaces/
+d3c86e61  wifi: Use stub for add_or_remove_virtual_intf functionality  [AmolAmrit]
+6b498b5f  wifi: Increase kMaxStopCompleteWaitMs to 250 msec.  [AmolAmrit]
+   * packages/apps/Extensions/
+6a7fd0aa  Fix build after Revert "Quick settings panel : Set transparency [2/2]"  [ShevT]
+65ef1453  Extensions: Add more summaries  [AmolAmrit]
+79ff3893  Revert "Quick settings panel : Set transparency [2/2]"  [AmolAmrit]
+   * packages/apps/FMRadio/
+8031f40  FMRadio: build with AAPT2  [AmolAmrit]
+   * packages/apps/Nfc/
+563cf694  NfcNci: make T3T/Nfc-F HCE optional  [Paul Keith]
+   * packages/apps/Settings/
+b60963625f  Implement per-app thermal control [1/3]  [Shubham Singh]
+bb2d91acab  AboutUS: This is a mainstream hobby now  [AmolAmrit]
+   * vendor/aosp/
+d545034   sensitive_pn: New United Kingdom helplines  [sb6596]
+1bf4004  extract_utils: make --section match words anywhere in the line  [AmolAmrit]
+0189107  extract_utils: introduce -k (kang mode) option  [AmolAmrit]
+cf60431  extract_utils: cleanup variable names and arguments passed to extract() function  [AmolAmrit]
+9d6b820  extract_utils: be compatible with system-as-root layouts  [AmolAmrit]
+74ff42f  extract_utils: drop the "/system/" prefix from prints of blob names  [AmolAmrit]
+58c66c1  extract_utils: avoid doing stuff on files that don't exist  [AmolAmrit]
+93d695f  extract_utils: Redirect vdexextractor log to /dev/null  [AmolAmrit]
+bc6957d  extract_utils: Newline love for adb extraction  [AmolAmrit]
+007af9e  extract_utils: make get_file() able to search paths with and w/o /system prefix  [AmolAmrit]
+4e69e56  extract_utils: extract(): fix src not being searched in "src:dst;args" spec  [AmolAmrit]
+2299d42  extract_utils: extract(): rename DEST variable to VENDOR_REPO_FILE  [AmolAmrit]
+aa1a86e  extract_utils: extract(): rename ARGS variable to SPEC_ARGS  [AmolAmrit]
+cf0e2c4  extract_utils: extract(): rename FILE variable to SPEC_SRC_FILE  [AmolAmrit]
+b923b06  extract_utils: extract(): rename FROM variable to SPEC_DST_FILE  [AmolAmrit]
+0163a74  extract_utils: create src_file() function to mirror behavior of target_file()  [AmolAmrit]
+7393f1a  extract_utils: prefix_match(): do not strip target_args from its output  [AmolAmrit]
+1dc88f9  extract_utils: target_file() and target_args() cleanup  [AmolAmrit]
+2fbd356  Revert "extract_files: Add support for paths without system/"  [AmolAmrit]
+fb15d03  Revert "extract_utils: Fix makefile generation issues"  [AmolAmrit]
+708c31e  Add APN for XFINITY Mobile  [AmolAmrit]
+c573639  apns: Add new Virgin Mobile apn  [AmolAmrit]
+e981a4f  apn: Update the Ultra Mobile apn  [AmolAmrit]
+73c28a6  write_makefiles: fix paths in BUILD_PREBUILT with destination  [AmolAmrit]
+c275288  vendor: Cleanup prop  [AmolAmrit]
+
+====================
+     03-12-2019
+====================
+
+   * frameworks/av/
+e8a4cfaac  audiopolicy: support extended feature in audiopolicymanager  [Shubham Singh]
+   * frameworks/base/
+c7597797c86  base: add vibrate util methods  [AmolAmrit]
+ab0a1a9fd57  base: Add DeviceUtils from Omni  [AmolAmrit]
+e5b1610a651  SystemUI: Add AmbientDisplay tile  [AmolAmrit]
+568a2356c46  SystemUI: Add Sync tile  [AmolAmrit]
+0f61f621740  MusicTile: Make tile state inactive if not playing music  [AmolAmrit]
+82f73d09ccd  Add Music QS Tile  [AmolAmrit]
+33cdbd0c1c4  AODTile: Fix long click intent  [AmolAmrit]
+f32e816f2ae  Add Always On Display QS Tile  [AmolAmrit]
+298b445a199  SoundSearchTile: Make default state inactive  [AmolAmrit]
+75d4e55028d  Add Google Sound Search tile  [AmolAmrit]
+04a4e69155d  SystemUI: OneHandMode QS tile  [AmolAmrit]
+7bea97c0dd7  VolumeDialog: Remove Media stream  [Arghya Chanda]
+8720f52efe6  VolumeDialog: Remove Ring stream  [AmolAmrit]
+58a692f392c  Volume dialog timeout (1/2)  [AmolAmrit]
+83f81ab1f3a  VolumeDialogImpl: Create settings observer only once  [AmolAmrit]
+cde253c2776  Switching audio panel position [1/2]  [AmolAmrit]
+e59cdaf3a28  Extended audio panel - fixes for unlinked notifications  [AmolAmrit]
+668bf5ea857  Extended audio panel [1/2]  [AmolAmrit]
+4d60a4145c2  wifi: Support to add vendor based Intent namespace  [AmolAmrit]
+de6fc57bd13  Wifi: Define DATA_STALL intent to broadcast message  [AmolAmrit]
+8855a96d264  wifi: Notify Connected/Disconnected Mac address on hotspot  [AmolAmrit]
+dc7e95c225d  Wifi: Send DHCP DISCOVER with rapid commit  [AmolAmrit]
+b94d703fd1d  Wifi: Add support for repeater mode  [AmolAmrit]
+7952d509f90  base: add support for SAP+SAP.  [AmolAmrit]
+8f14c9781f8  Wifi: Allow saving sim_num for EAP-SIM/AKA/AKA_PRIME configurations  [AmolAmrit]
+11ae62cd4a0  framework: Add Wifi Simple Configuration support  [AmolAmrit]
+41b2d94b10f  framework: Add WiFi Display R2 device info  [AmolAmrit]
+11de52d27ec  wifi: Add APIs and keymgmt to support WPA3(DPP,SAE,OWE,SuiteB).  [AmolAmrit]
+f0dcc226b54  Wifi: Add FILS support in WifiConfiguration  [AmolAmrit]
+7abaa8d69fd  wifi: Add settings to allow delay_disconnect if needed.  [AmolAmrit]
+85ff0af73fc  Add WIFI_COUNTRY_CODE_CHANGED_ACTION broadcast.  [AmolAmrit]
+a7251df949a  Revert "SystemUI: Fix an issue where jumping to black after screen turned on"  [ShevT]
+979bf075fc0  AOD: PowerManager: Turn on display if Doze On Charge is Enabled  [ShevT]
+08e9b58f1f1  base: add option to show AOD on charge only [1/2]  [ShevT]
+f694b250c02  SystemUI: Make recents grid view accept more than 8 tasks  [ShevT]
+ba3df5f7b0b  WifiDisplayController: handle preexisting p2p connection status  [Shubham Singh]
+6c4b826ba4d  Merge changes for launching wifidisplay from system settings  [Shubham Singh]
+   * frameworks/opt/net/wifi/
+0765857b9  Wifi: Add support for wpa3(dpp,sae,owe,suiteB) network  [Akash98Sky]
+e64fd6c1c  Wifi: Add support to configure HLP, DHCP and manageIpClient for FILS N/W  [Akash98Sky]
+697fbc8ab  Wifi: Introduce client interface for vendor supplicant 2.0  [Akash98Sky]
+5204eacee  Wi-Fi : Abort setWifiEnabled if WifiController not ready  [Akash98Sky]
+46fa76d12  Wifi: Feature support for Repeater Mode.  [Akash98Sky]
+983ad9277  Wifi: Notify Connected/Disconected client Mac acddress  [Akash98Sky]
+bd4a03c2f  softap: Add support for SAP+SAP from wifi service using HostapdVendor.  [Akash98Sky]
+7b5f0cbc9  WiFi: Ignore connectivity scans during WFD session  [Shubham Singh]
+   * hardware/interfaces/
+10900668  Configstore: Don't override LOCAL_CFLAGS  [ShevT]
+   * packages/apps/Contacts/
+0dd9d0c3b  Fix casting warnings in ContactSaveService  [ShevT]
+   * packages/apps/Extensions/
+ef8aed3a  In-call vibrations: Add Summaries  [AmolAmrit]
+88a6028b  VolumePanel: Remove media with media summary  [Arghya Chanda]
+5108a2bd  VolumePanel: Add summaries  [AmolAmrit]
+024a8398  Volume dialog timeout: Fix using seekbar to configure  [ShevT]
+3b9a3efe  Buttons: Rearrange volume panel  [Arghya Chanda]
+9277f76a  Volume dialog timeout (2/2)  [AmolAmrit]
+efe1a7a3  Switching audio panel position [2/2]  [AmolAmrit]
+6e4d143b  Extended audio panel [2/2]  [AmolAmrit]
+7b53249e  CustomSeekBarPreference: Allov translate defaultText  [ShevT]
+   * packages/apps/Settings/
+d65235c067  Settings: Remove extended version from device info screen  [Aayush Gupta]
+5b05c6e8b6  Support to notify connected/disconnected stations  [AmolAmrit]
+b1f265ae62  Settings: add option to show AOD on charge only [2/2]  [ShevT]
+   * packages/apps/Snap/
+fa8413a9a  Automatic translation import  [AmolAmrit]
+   * packages/services/Telecomm/
+d1329557  Telecomm: Update code for in-call vibrations  [AmolAmrit]
+   * vendor/aosp/
+56ce935  Set google autofill service as default  [SakilMondal]
+0a484ce  prebuilt: Turbo: Ensure turbo isn't signed by platform  [Shubham Singh]
+01804f5  Revert "Revert "Fix Miracast on all our devices""  [Shubham Singh]
+040120f  qcom: Mark some gralloc bits as valid  [Shubham Singh]
+
+====================
+     03-11-2019
+====================
+
+   * device/xiaomi/sdm660-common/
+0b759d6  sdm660: Adjust Cpu Boost values for new cpu input boost  [Max Weffers]
+a1513d3  update: zh and zh-cn for MiParts (part 2)  [Max Weffers]
+6803cb2  update: zh and zh-cn for MiParts  [Max Weffers]
+   * hardware/qcom/fm/
+8184149  Automatic translation import  [Michael W]
+   * packages/apps/Nfc/
+cff6a276  Automatic translation import  [Michael W]
+
+====================
+     03-10-2019
+====================
+
+   * device/qcom/sepolicy-legacy/
+a3ea3ce  sepolicy: Resolve cameraserver denials  [SakilMondal]
+710744d  legacy: Resolve hal_camera_default denials  [SakilMondal]
+2737530  sepolicy: Label vendor.post_boot.parsed  [SakilMondal]
+e60b281  sepolicy: Resolve hal_nfc denials  [SakilMondal]
+1b717e9  legacy: Resolve rome BT denials  [SakilMondal]
+c8f9626  sepolicy: Correctly label display.qservice per SoC  [SakilMondal]
+b066380  Revert "legacy: allow init to read /proc/device-tree"  [SakilMondal]
+b41efc7  legacy: Label /data/misc/display again  [SakilMondal]
+0f0b81f  legacy: Ignore neverallows  [SakilMondal]
+   * kernel/xiaomi/sdm660/
+7cbdfe9080f0  qcacld: nuke rx_wakelock code entirely  [Max Weffers]
+7fd0319658ae  qcacld: disable qcom_rx_wakelock  [Max Weffers]
+0a6d6ddbf2b0  mmc: pwrseq: Use kmalloc_array instead of stack VLA  [Max Weffers]
+bb2447bac1e8  mmc: core: Change wait events to timeout types  [Max Weffers]
+8bdd093b8a31  mmc: core: align max segment size with logical block size  [Max Weffers]
+dc7f109fdb35  mmc: core: Use memdup_user() rather than duplicating its implementation  [Max Weffers]
+4087f538714c  mmc: card: Don't show eMMC RPMB and BOOT areas in /proc/partitions  [Max Weffers]
+6d2eec45218b  mmc: core: optimize mmc_calc_max_discard  [Max Weffers]
+68a0842ae472  mmc: core: Re-factor some code for SDIO re-initialization  [Max Weffers]
+1cf1a24d9478  mmc: core: Fix NULL ptr crash from mmc_should_fail_request  [Max Weffers]
+676bb7d6e0f2  mmc: core: Clarify code for sending CSD  [Max Weffers]
+0064d94b0b3b  mmc: core: Drop mmc_all_send_cid() and use mmc_send_cxd_native() instead  [Max Weffers]
+ccf362a0f9d4  mmc: core: Re-factor code for sending CID  [Max Weffers]
+a3d129009a0f  mmc: core: Remove redundant code in mmc_send_cid()  [Max Weffers]
+bae29c6319b1  mmc: core: Delete error messages for failed memory allocations  [Max Weffers]
+01f3869a5f7e  mmc: remove the discard_zeroes_data flag  [Max Weffers]
+563152e790ab  mmc: core: remove check of host->removed for rescan routine  [Max Weffers]
+f1272db7112f  mmc: sdhci-acpi: remove unused struct sdhci_host variable  [Max Weffers]
+67d8a1905405  mmc: sdhci: remove CONFIG_MMC_DEBUG from the driver  [Max Weffers]
+d291517119bd  mmc: wbsd: remove CONFIG_MMC_DEBUG from the driver  [Max Weffers]
+64870b421d2a  mmc: Kconfig: downgrade CONFIG_MMC_DEBUG for host drivers only  [Max Weffers]
+5f1446564430  mmc: core: turn the pr_info under CONFIG_MMC_DEBUG into pr_debug  [Max Weffers]
+732a57e00420  mmc: Convert to using %pOF instead of full_name  [Max Weffers]
+681cb53d9163  mmc: host: via-sdmmc: constify pci_device_id.  [Max Weffers]
+85358dc9c299  mmc: block: Move duplicate check  [Max Weffers]
+fcb9b73cb48d  mmc: ops: export mmc_get_status()  [Max Weffers]
+24b9e44c2ff2  mmc: mmci: constify amba_id  [Max Weffers]
+a89a1304f184  mmc: block: Check for transfer state in card_busy_detect()  [Max Weffers]
+3141dc9de861  mmc: block: Check the timeout correctly in card_busy_detect()  [Max Weffers]
+0032aaf5efb8  Make mmc_pre_req() and mmc_post_req() available to the card drivers. Later patches will make use of this.  [Max Weffers]
+36baeea8f9b0  mmc: block: No need to export mmc_cleanup_queue()  [Max Weffers]
+636ab10485d1  mmc: core: properly init drv_type  [Max Weffers]
+8050b7af100a  mmc: core: Adjust and reuse the macro of R1_STATUS(x)  [Max Weffers]
+04fdccd45474  mmc: sd: add sys entry to read card speed.  [Max Weffers]
+d1c930f89a6f  mmc: Move clearing ice config to cmdq_post_req  [Max Weffers]
+02b3454e6092  mmc: core: remove a unused variable  [Max Weffers]
+860a39832905  mmc: core: set regulator not found message as debug  [Max Weffers]
+0312b06b58de  mmc: block: change to use kmalloc when copy data from userspace  [Max Weffers]
+62dbc6020f4a  mmc: remove unnecessary assignment statements before return  [Max Weffers]
+3b5610be7df1  mmc: core: use the defined function to check whether card is removable  [Max Weffers]
+8c98584f55bd  mmc: core: improve mmc_of_parse_voltage() to return better status  [Max Weffers]
+25e1627a32d3  mmc: core: shut up "voltage-ranges unspecified" pr_info()  [Max Weffers]
+2198ac365f4a  mmc: block: shut up "retrying because a re-tune was needed" message  [Max Weffers]
+e3eee81d8999  mmc: core: remove redundant memset of mmc_decode_cid  [Max Weffers]
+3c38c9a0b043  mmc: core: remove redundant memset of sdio_read_cccr  [Max Weffers]
+f20a09df847d  mmc: core: Optimize boot time by detecting cards simultaneously  [Max Weffers]
+c377dfa63019  mmc: block: Use the mmc host device index as the mmcblk device index  [Max Weffers]
+2e20c0be6b79  mmc: block: Convert to IDA for partition device indexes  [Max Weffers]
+ca896c2621e9  mmc: core: Convert from IDR to IDA for host indexes  [Max Weffers]
+91fc296a2e41  mmc: mmc: Attempt to flush cache before reset  [Max Weffers]
+2917cabdf11a  mmc: block: fix free of uninitialized 'idata->buf'  [Max Weffers]
+672c73461723  mmc: Set pref erase size based on size  [Max Weffers]
+366673e75349  mmc: block: correct 4KB alignment check  [Max Weffers]
+ad71374fc1c1  mmc: sdhci: Move host->data warning  [Max Weffers]
+7e2952a84172  mmc: sdhci: Do not allow tuning procedure to be interrupted  [Max Weffers]
+80a5911c8430  mmc: core: Use a default maximum erase timeout  [Max Weffers]
+4a9ed178b91a  mmc: Change the max discard sectors and erase response when HW busy detect  [Max Weffers]
+1ad481979a45  mmc: block: remove the check of packed for packed request routine  [Max Weffers]
+68b5881d2841  mmc: core: Optimize the mmc erase size alignment  [Max Weffers]
+48f88f17ae74  mmc: core: Factor out the alignment of erase size  [Max Weffers]
+aa3ad0c9097d  mmc: card: do away with indirection pointer  [Max Weffers]
+9f17163f6698  Disable test io/mmc drivers  [Max Weffers]
+3c5f6354c943  sdm660: mdss: Set diffrent max brightnesss for jasmine to avoid bleeding  [Max Weffers]
+
+====================
+     03-09-2019
+====================
+
+   * external/chromium-webview/
+7390467  Update x86/x86_64 Chromium Webview to 72.0.3626.121  [Kevin F. Haggerty]
+   * kernel/lenovo/msm8953/
+8338cb547361  Merge tag 'LA.UM.7.5.r1-04300-8x96.0' into kernel.lnx.3.18.r34-rel  [Nathan Chancellor]
+   * kernel/xiaomi/sdm660/
+2290ef051d20  drivers: Remove references to PM_RUNTIME  [Max Weffers]
+618c66fe1547  soc: qcom: service-locator: Use interruptible wait for locator  [Max Weffers]
+14196408b4a2  LMK: Disable debugging  [Max Weffers]
+81893ff51064  mmc: disable SPI CRC  [Max Weffers]
+   * manifest/
+86aaeff  Track gapps  [Shubham Singh]
+   * vendor/aosp/
+3cfbb9b  Allow to build with gapps  [Shubham Singh]
+   * vendor/gapps/
+0767034  Gapps: Changes for aex  [Shubham Singh]
+
+====================
+     03-08-2019
+====================
+
+   * bionic/
+ceec1fe66  Merge tag 'android-9.0.0_r34' into HEAD  [Shubham Singh]
+   * build/make/
+50f9c1cab  Merge tag 'android-9.0.0_r34' into HEAD  [Shubham Singh]
+   * frameworks/av/
+80ba5b8c3  Merge tag 'android-9.0.0_r34' into HEAD  [Shubham Singh]
+   * frameworks/base/
+281206795f3  Merge tag 'android-9.0.0_r34' into HEAD  [Shubham Singh]
+   * frameworks/native/
+d0d5d8f2d  Merge tag 'android-9.0.0_r34' into HEAD  [Shubham Singh]
+   * hardware/nxp/nfc/
+81275d3  Merge tag 'android-9.0.0_r34' into lineage-16.0-android-9.0.0_r34  [Luca Stefani]
+   * manifest/
+89fd73b  Merge tag 'android-9.0.0_r34' into HEAD  [Shubham Singh]
+   * packages/apps/PackageInstaller/
+38289e64  Merge tag 'android-9.0.0_r34' into HEAD  [Shubham Singh]
+   * system/bt/
+003824a0b  Merge tag 'android-9.0.0_r34' into HEAD  [Shubham Singh]
+   * system/core/
+8da3f9497  Merge tag 'android-9.0.0_r34' into HEAD  [Shubham Singh]
+   * vendor/nxp/opensource/commonsys/packages/apps/Nfc/
+fcd61207  Merge tag 'LA.UM.7.3.r1-06900-sdm845.0' into HEAD  [Bruno Martins]
+   * vendor/nxp/opensource/halimpl/
+460e28d  Merge tag 'LA.UM.7.3.r1-06900-sdm845.0' into HEAD  [Bruno Martins]
+
+====================
+     03-07-2019
+====================
+
+   * device/xiaomi/jasmine_sprout/
+2709bbe  Update README.md  [GitHub]
+bede8b4  jasmine_sprout: Delete 3GB variant, set correct released date and change picture to Mi A2  [GitHub]
+   * kernel/xiaomi/sdm660/
+fb3a7736c3a8  Merge branch 'linux-4.4.y' of https://git.kernel.org/pub/scm/linux/kernel/git/jaegeuk/f2fs-stable into redo  [Max Weffers]
+056da3804195  f2fs: fix rapid GC breakage from merge 4e87f7d2befb8  [Max Weffers]
+ff3a55fe589b  f2fs/rapid_gc: do not wait until all invalid blocks are discarded  [Max Weffers]
+
+====================
+     03-06-2019
+====================
+
+   * device/xiaomi/jasmine_sprout/
+f444be4  jasmine_sprout: copy codec to media_codecs_vendor too  [Max Weffers]
+6e6781e  jasmine_sprout: Update Camera props based on pie release  [Max Weffers]
+   * device/xiaomi/sdm660-common/
+85844a8  sdm660: Access mlipay hal via a binder service  [Max Weffers]
+933d7d8  sdm660: Add Thermal Controller App  [Max Weffers]
+30ca9a0  sdm660: Enable workaround for old MCC/MNC format  [Max Weffers]
+082e9f5  sdm660: bluetooth: Decrease MAX_L2CAP_CHANNELS  [Max Weffers]
+b1794ea  sdm660: Add mi pad 4 plus name for bt devices  [Max Weffers]
+7ca7a36  sdm660: force some more apps to camera hal1  [Max Weffers]
+5741e27  sdm660: Set OpenGL Skia as default renderer  [Max Weffers]
+00ce546  sdm660: Add spanish translation for Xiaomi Parts  [Max Weffers]
+5900444  sdm660: Add korean translation for Xiaomi Parts and kCal Settings  [Max Weffers]
+0aaeecf  sdm660: audio: change path to point to /data/vendor/audio  [Max Weffers]
+7bb4cea  sdm660: rootdir: Re-enable port-bridge service  [Max Weffers]
+   * kernel/xiaomi/sdm660/
+e69394d43384  Merge branch 'android-4.4' of https://github.com/aosp-mirror/kernel_common into redo  [Max Weffers]
+6a2d142da581  Merge branch 'linux-4.4.y' of https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable-rc into redo  [Max Weffers]
+fedb96021a50  LA.UM.7.2.r1-06500-sdm660.0  [Max Weffers]
+ddff184c02fb  Merge tag 'LA.UM.7.2.r1-06500-sdm660.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn into redo  [Max Weffers]
+667d076c2b0c  Merge tag 'LA.UM.7.2.r1-06500-sdm660.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/fw-api into redo  [Max Weffers]
+698cd9410ffe  Merge tag 'LA.UM.7.2.r1-06500-sdm660.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0 into redo "LA.UM.7.2.r1-06500-sdm660.0"  [Max Weffers]
+c68e1228c2b4  Merge tag 'LA.UM.7.2.r1-06500-sdm660.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.4 into redo "LA.UM.7.2.r1-06500-sdm660.0"  [Max Weffers]
+f44df02cd202  ANDROID: overlayfs: override_creds=off option bypass creator_cred  [Mark Salyzyn]
+
+====================
+     03-05-2019
+====================
+
+   * kernel/xiaomi/sdm660/
+0272cd402b73  FROMGIT: binder: create node flag to request sender's security context  [Todd Kjos]
+   * manifest/
+00963bf  Manifest for Android 9.0.0 Release 34 (PQ2A.190305.002)  [The Android Open Source Project]
+   * packages/apps/Snap/
+705b26aac  Automatic translation import  [AmolAmrit]
+92422128f  Automatic translation import  [AmolAmrit]
+de63a85b3  Snap: Add back original-package in manifest  [AmolAmrit]
+f344b9355  Snap: Remove unused resources  [AmolAmrit]
+508ff03ac  Merge tag 'LA.UM.7.3.r1-06900-sdm845.0' into HEAD  [AmolAmrit]
+
+====================
+     03-04-2019
+====================
+
+   * device/aosp/sepolicy/
+90dd551  Make backuptool permissive only in non user builds  [davidevinavil]
+a50e78d  Make sysinit permissive  [davidevinavil]
+   * device/qcom/sepolicy/
+3710bd4  sepolicy: Whitelist vold from reading mnt_vendor_file  [davidevinavil]
+   * kernel/xiaomi/sdm660/
+4bb62a3aba94  Linux 4.4.177-rc1  [Greg Kroah-Hartman]
+d6fea63b029e  x86/uaccess: Don't leak the AC flag into __put_user() value evaluation  [Greg Kroah-Hartman]
+1e3f81fbd27c  mm: enforce min addr even if capable() in expand_downwards()  [Greg Kroah-Hartman]
+5b985b20a530  mmc: spi: Fix card detection during probe  [Greg Kroah-Hartman]
+f5a7e17dd784  powerpc: Always initialize input array when calling epapr_hypercall()  [Greg Kroah-Hartman]
+d58a63718657  KVM: arm/arm64: Fix MMIO emulation data handling  [Greg Kroah-Hartman]
+e9acd1f5de3a  arm/arm64: KVM: Feed initialized memory to MMIO accesses  [Greg Kroah-Hartman]
+8c2680a9b492  KVM: nSVM: clear events pending from svm_complete_interrupts() when exiting to L1  [Greg Kroah-Hartman]
+9757999e61af  cfg80211: extend range deviation for DMG  [Greg Kroah-Hartman]
+0df4b98381e5  mac80211: don't initiate TDLS connection if station is not associated to AP  [Greg Kroah-Hartman]
+f3a427205c15  ibmveth: Do not process frames after calling napi_reschedule  [Greg Kroah-Hartman]
+2d3a999b57cf  net: altera_tse: fix connect_local_phy error path  [Greg Kroah-Hartman]
+9621f8d3b695  scsi: csiostor: fix NULL pointer dereference in csio_vport_set_state()  [Greg Kroah-Hartman]
+2612be406bb5  serial: fsl_lpuart: fix maximum acceptable baud rate with over-sampling  [Greg Kroah-Hartman]
+309eb988300d  mac80211: fix miscounting of ttl-dropped frames  [Greg Kroah-Hartman]
+642def049371  ARC: fix __ffs return value to avoid build warnings  [Greg Kroah-Hartman]
+e690d5d205d7  ASoC: imx-audmux: change snprintf to scnprintf for possible overflow  [Greg Kroah-Hartman]
+248659650971  ASoC: dapm: change snprintf to scnprintf for possible overflow  [Greg Kroah-Hartman]
+7bdff615117f  usb: gadget: Potential NULL dereference on allocation error  [Greg Kroah-Hartman]
+71109897fdef  usb: dwc3: gadget: Fix the uninitialized link_state when udc starts  [Greg Kroah-Hartman]
+577b23962105  thermal: int340x_thermal: Fix a NULL vs IS_ERR() check  [Greg Kroah-Hartman]
+bbd394010189  ALSA: compress: prevent potential divide by zero bugs  [Greg Kroah-Hartman]
+40c2591ad40c  ASoC: Intel: Haswell/Broadwell: fix setting for .dynamic field  [Greg Kroah-Hartman]
+208559fcc509  drm/msm: Unblock writer if reader closes file  [Greg Kroah-Hartman]
+c2e5110955d9  scsi: libsas: Fix rphy phy_identifier for PHYs with end devices attached  [Greg Kroah-Hartman]
+032546ff26a3  libceph: handle an empty authorize reply  [Greg Kroah-Hartman]
+07d9ceec38f6  Revert "bridge: do not add port to router list when receives query with source 0.0.0.0"  [Greg Kroah-Hartman]
+1f802f9af63c  ARCv2: Enable unaligned access in early ASM code  [Greg Kroah-Hartman]
+2e77cecb1fdb  net/mlx4_en: Force CHECKSUM_NONE for short ethernet frames  [Greg Kroah-Hartman]
+83e90e519fce  sit: check if IPv6 enabled before calling ip6_err_gen_icmpv6_unreach()  [Greg Kroah-Hartman]
+066f0af08c41  team: avoid complex list operations in team_nl_cmd_options_set()  [Greg Kroah-Hartman]
+baaddb8a2a8c  net/packet: fix 4gb buffer limit due to overflow check  [Greg Kroah-Hartman]
+89d2de182927  batman-adv: fix uninit-value in batadv_interface_tx()  [Greg Kroah-Hartman]
+a25b9fc8ee2b  KEYS: always initialize keyring_index_key::desc_len  [Greg Kroah-Hartman]
+b7628327b7fb  KEYS: user: Align the payload buffer  [Greg Kroah-Hartman]
+4ba921a4c8d7  RDMA/srp: Rework SCSI device reset handling  [Greg Kroah-Hartman]
+018848fd8270  isdn: avm: Fix string plus integer warning from Clang  [Greg Kroah-Hartman]
+cf4eb33f1e38  leds: lp5523: fix a missing check of return value of lp55xx_read  [Greg Kroah-Hartman]
+140093b14b6d  atm: he: fix sign-extension overflow on large shift  [Greg Kroah-Hartman]
+5a542907c151  isdn: i4l: isdn_tty: Fix some concurrency double-free bugs  [Greg Kroah-Hartman]
+1cf4687f3c97  MIPS: jazz: fix 64bit build  [Greg Kroah-Hartman]
+6d56f6090868  scsi: isci: initialize shost fully before calling scsi_add_host()  [Greg Kroah-Hartman]
+a3cac13619c6  scsi: qla4xxx: check return code of qla4xxx_copy_from_fwddb_param  [Greg Kroah-Hartman]
+1874468926af  MIPS: ath79: Enable OF serial ports in the default config  [Greg Kroah-Hartman]
+16672fd142c1  net: hns: Fix use after free identified by SLUB debug  [Greg Kroah-Hartman]
+2b434f31e98e  mfd: mc13xxx: Fix a missing check of a register-read failure  [Greg Kroah-Hartman]
+85cfbc0194fe  mfd: wm5110: Add missing ASRC rate register  [Greg Kroah-Hartman]
+2f0de74a70aa  mfd: qcom_rpm: write fw_version to CTRL_REG  [Greg Kroah-Hartman]
+d59121e5c2fc  mfd: ab8500-core: Return zero in get_register_interruptible()  [Greg Kroah-Hartman]
+801cb41188b8  mfd: db8500-prcmu: Fix some section annotations  [Greg Kroah-Hartman]
+fd0d28b0c74b  mfd: twl-core: Fix section annotations on {,un}protect_pm_master  [Greg Kroah-Hartman]
+b9355d1a6023  mfd: ti_am335x_tscadc: Use PLATFORM_DEVID_AUTO while registering mfd cells  [Greg Kroah-Hartman]
+f44ce1f8241e  KEYS: allow reaching the keys quotas exactly  [Greg Kroah-Hartman]
+0d4c9800c025  numa: change get_mempolicy() to use nr_node_ids instead of MAX_NUMNODES  [Greg Kroah-Hartman]
+a9467c88b684  ceph: avoid repeatedly adding inode to mdsc->snap_flush_list  [Greg Kroah-Hartman]
+   * system/sepolicy/
+5e4484b2  Ignore newly added selinux objects  [davidevinavil]
+
+====================
+     03-03-2019
+====================
+
+   * external/bash/
+a40f251  bash: Silence all build warnings  [Michael Bestas]
+   * external/openssh/
+729a9063  openssh: Silence build warnings  [Michael Bestas]
+   * external/rsync/
+4a30b87d  rsync: Silence build warnings  [Michael Bestas]
+   * vendor/nxp/opensource/halimpl/
+fb5cc96  halimpl: Remove useless makefile  [Bruno Martins]
+
